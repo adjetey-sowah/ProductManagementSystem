@@ -5,7 +5,7 @@ import lombok.*;
 
 import com.juls.lab.productmanagementsystem.model.Category;
 
-import java.sql.Timestamp;
+
 import java.time.LocalDateTime;
 import java.util.Set;
 
@@ -24,7 +24,7 @@ public class Product {
     private double price;
     private int quantityInStock;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id")
     private Category category;
 
