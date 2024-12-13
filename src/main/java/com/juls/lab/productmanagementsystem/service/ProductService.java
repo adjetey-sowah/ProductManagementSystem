@@ -16,7 +16,7 @@ public interface ProductService{
     void deleteProduct(Long productId);
     Product updateProduct(Long id, Product product) throws ResourceNotFoundException;
     Product getProductById(Long id) throws ResourceNotFoundException;
-    void updateProductStock(Long productId, Integer quantity);
+    void updateProductStock(Long productId, Integer quantity) throws ResourceNotFoundException;
     boolean isProductInStock(Long id) throws ProductNotFoundException;
     List<Product> getNewArrivals(int limit);
     List<Product> getTopSellingProducts();

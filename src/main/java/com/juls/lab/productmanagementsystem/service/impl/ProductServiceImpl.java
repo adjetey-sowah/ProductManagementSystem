@@ -13,7 +13,6 @@ import lombok.SneakyThrows;
 
 import java.math.BigDecimal;
 import java.util.List;
-import java.util.Optional;
 
 @RequiredArgsConstructor
 public class ProductServiceImpl implements ProductService {
@@ -24,8 +23,8 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product createProduct(Product product) {
-        Product savedProduct = this.productRepository.save(product);
-        return savedProduct;
+        product.setActive(true);
+        return this.productRepository.save(product);
     }
 
     @Override
@@ -45,6 +44,7 @@ public class ProductServiceImpl implements ProductService {
         Product existingProduct = getProductById(id);
 
         existingProduct.setProductName(product.getProductName());
+        existingProduct.setDescription(product.getDescription());
         existingProduct.setPrice(product.getPrice());
         existingProduct.setCategory(product.getCategory());
         existingProduct.setQuantityInStock(product.getQuantityInStock());
@@ -61,8 +61,10 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public void updateProductStock(Long productId, Integer quantity) {
-
+    public void updateProductStock(Long productId, Integer quantity) throws ResourceNotFoundException {
+        Product product = getProductById(productId);
+        product.setQuantityInStock(product.getQuantityInStock() + quantity);
+        productRepository.save(product);
     }
 
     @Override
@@ -81,7 +83,6 @@ public class ProductServiceImpl implements ProductService {
     public List<Product> getTopSellingProducts() {
         return List.of();
     }
-
 
     @SneakyThrows
     @Override
@@ -106,13 +107,13 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> searchProducts(String keyword) {
-        return this.productRepository.findByProductNameContainingIgnoreCaseAAndActiveTrue(keyword);
+        return this.productRepository
+                .findByProductNameContainingIgnoreCase(keyword);
     }
 
     @Override
     public List<Product> getProductsByPriceRange(double minPrice, double maxPrice) {
-        return this.productRepository
-                .findByPriceBetweenAndActiveTrue(minPrice, maxPrice);
+        return List.of();
     }
 
     @SneakyThrows
@@ -133,7 +134,8 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> getDiscountedProducts() {
-        return productRepository.findByDiscountGreaterThanAndActiveTrue(BigDecimal.ZERO);
+        return productRepository
+                .findByDiscountGreaterThan(BigDecimal.ZERO);
     }
 
 

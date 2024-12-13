@@ -12,9 +12,8 @@ import java.util.Optional;
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
     List<Product> findProductByCategory(Category category);
-    List<Product> findByProductNameContainingIgnoreCaseAAndActiveTrue(String keyword);
-    List<Product> findByPriceBetweenAndActiveTrue(double price, double price2);
-    List<Product> findByDiscountGreaterThanAndActiveTrue(BigDecimal discount);
+    List<Product> findByProductNameContainingIgnoreCase(String keyword);
+    List<Product> findByDiscountGreaterThan(BigDecimal discount);
     @Query("SELECT p FROM Product p JOIN p.productAttribute attr where attr.name = :attrName AND attr.value = :attrValue")
     List<Product> findByProductAttributeNameAndValue(String attrName, String attrValue);
 
