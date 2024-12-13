@@ -6,6 +6,7 @@ import lombok.*;
 import com.juls.lab.productmanagementsystem.model.Category;
 
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Set;
 
@@ -27,6 +28,10 @@ public class Product {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id")
     private Category category;
+
+    private boolean isActive = true;
+
+    private BigDecimal discount;
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     private Set<ProductAttribute> productAttribute;
