@@ -23,9 +23,6 @@ public class Category {
     @OneToMany(mappedBy = "parent")
     private Set<Category> subCategories;
 
-    @OneToMany(mappedBy = "category")
-    private Set<Product> products;
-
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
