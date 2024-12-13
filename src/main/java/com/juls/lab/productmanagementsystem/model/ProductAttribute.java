@@ -8,9 +8,8 @@ import lombok.Data;
 public class ProductAttribute {
 
     @Id
-    @Column(name = "attribute_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long attributeId;
 
     @ManyToOne
     private Product product;
