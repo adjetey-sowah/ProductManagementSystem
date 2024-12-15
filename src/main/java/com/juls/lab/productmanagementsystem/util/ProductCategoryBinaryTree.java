@@ -77,7 +77,6 @@ public class ProductCategoryBinaryTree {
         root = removeRecursive(root, category);
     }
 
-
     private BinaryTreeNode removeRecursive(BinaryTreeNode node, String categoryName) {
         if (node == null) {
             return null;
@@ -100,7 +99,6 @@ public class ProductCategoryBinaryTree {
             else if (node.getRight() == null) {
                 return node.getLeft();
             }
-
             // Case 2: Two children
             // Find the smallest value in the right subtree (successor)
             BinaryTreeNode successor = findMin(node.getRight());
@@ -119,5 +117,6 @@ public class ProductCategoryBinaryTree {
         }
         return node;
     }
+
 
 }
