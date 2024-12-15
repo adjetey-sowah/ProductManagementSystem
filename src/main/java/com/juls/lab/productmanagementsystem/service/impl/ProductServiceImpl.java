@@ -10,11 +10,13 @@ import com.juls.lab.productmanagementsystem.service.CategoryService;
 import com.juls.lab.productmanagementsystem.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
 
 @RequiredArgsConstructor
+@Service
 public class ProductServiceImpl implements ProductService {
 
     public final ProductRepository productRepository;
@@ -100,8 +102,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> getProductsByByCategory(Long categoryId) throws ResourceNotFoundException {
-        Category category = categoryService.getCategoryById(categoryId)
-                .orElseThrow(() ->  new ResourceNotFoundException("Category not found with id: " +categoryId));
+        Category category = categoryService.getCategoryById(categoryId);
         return this.productRepository.findProductByCategory(category);
     }
 

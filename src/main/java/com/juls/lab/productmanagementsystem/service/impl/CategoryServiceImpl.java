@@ -4,16 +4,26 @@ import com.juls.lab.productmanagementsystem.model.Category;
 import com.juls.lab.productmanagementsystem.model.Product;
 import com.juls.lab.productmanagementsystem.repository.CategoryRepository;
 import com.juls.lab.productmanagementsystem.service.CategoryService;
+import com.juls.lab.productmanagementsystem.util.BinaryTreeNode;
+import com.juls.lab.productmanagementsystem.util.ProductCategoryBinaryTree;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 
+@Service
+@Transactional
 @RequiredArgsConstructor
 public class CategoryServiceImpl implements CategoryService {
 
     private final CategoryRepository categoryRepository;
+    private final ProductCategoryBinaryTree binaryTree;
 
     @Override
     public Category getCategoryById(Long id) {
@@ -23,7 +33,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public List<Category> getAllCategories() {
-        return List.of();
+        return this.categoryRepository.findAll();
     }
 
     @Override
@@ -37,16 +47,57 @@ public class CategoryServiceImpl implements CategoryService {
             category.setParent(parent);
             parent.getSubCategories().add(category);
         }
+        binaryTree.insertCategory(category);
         return this.categoryRepository.save(category);
     }
     @Override
-    public void deleteCategory(Long categoryId, Long reassignToCategoryId) {
-        Category category = getCategoryById(reassignToCategoryId);
+        public void deleteCategory(Long categoryId, Long reassignToCategoryId) {
+            Category categoryToDelete = getCategoryById(categoryId);
+
+            if (reassignToCategoryId != null) {
+                Category reassignToCategory = getCategoryById(reassignToCategoryId);
+
+                // Reassign products to the new category
+                for (Product product : categoryToDelete.getProducts()) {
+                    product.setCategory(reassignToCategory);
+                    reassignToCategory.getProducts().add(product);
+                }
+            } else {
+                // If no reassignment, just remove products from the category
+                for (Product product : categoryToDelete.getProducts()) {
+                    product.setCategory(null);
+                }
+            }
+
+            // Remove from parent category if exists
+            if (categoryToDelete.getParent() != null) {
+                categoryToDelete.getParent().getSubCategories().remove(categoryToDelete);
+            }
+
+            // Delete the category and update binary tree
+            categoryRepository.delete(categoryToDelete);
+            binaryTree.removeCategory(categoryToDelete.getName());
     }
 
     @Override
-    public Category updateCategory(Category category) {
-        return null;
+    public Category updateCategory(Long categoryId, String newName, String newDescription, Long newParentId){
+        Category category = this.getCategoryById(categoryId);
+
+        if(newName != null){
+            category.setName(newName);
+        }
+        if(newDescription != null){
+            category.setDescription(newDescription);
+        }
+        // Update parent category if needed
+        if (newParentId != null && !newParentId.equals(category.getParent() != null ? category.getParent().getId() : null)) {
+            Category newParent = categoryRepository.findById(newParentId)
+                    .orElseThrow(() -> new IllegalArgumentException("Parent category not found"));
+            category.setParent(newParent);
+        }
+        Category updatedCategory = this.categoryRepository.save(category);
+        binaryTree.insertCategory(updatedCategory);
+        return updatedCategory;
     }
 
     @Override
@@ -57,16 +108,45 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public List<Product> getProductsUnderCategory(Long categoryId) {
-        return List.of();
+        // Retrieve the category from the binary tree for fast access
+        Category category = getCategoryById(categoryId);
+        // Use BinaryTree for hierarchical retrieval
+        return binaryTree.getProductsUnderCategory(category.getName());
     }
 
     @Override
     public void moveProducts(Long sourceCategoryId, Long targetCategoryId) {
+        Category sourceCategory = getCategoryById(sourceCategoryId);
+        Category targetCategory = getCategoryById(targetCategoryId);
 
+        // Move all products from source to target
+        for (Product product : sourceCategory.getProducts()) {
+            product.setCategory(targetCategory);
+            targetCategory.getProducts().add(product);
+        }
+        // Clear products in the source category
+        sourceCategory.getProducts().clear();
+        categoryRepository.save(sourceCategory);
+        categoryRepository.save(targetCategory);
     }
 
     @Override
     public List<Category> getCategoryTree() {
-        return List.of();
+        List<Category> allCategories = categoryRepository.findAll();
+        // Organize into a tree structure
+        Map<Long, Category> categoryMap = allCategories.stream()
+                .collect(Collectors.toMap(Category::getId, category -> category));
+        List<Category> roots = new ArrayList<>();
+        for (Category category : allCategories) {
+            if (category.getParent() == null) {
+                roots.add(category);
+            } else {
+                categoryMap.get(category.getParent().getId()).getSubCategories().add(category);
+            }
+        }
+
+        return roots;
     }
+
+
 }

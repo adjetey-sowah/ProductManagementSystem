@@ -8,8 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Set;
 
-@Service
-@Transactional
+
 public interface CategoryService {
 
     Category getCategoryById(Long id);
@@ -18,7 +17,7 @@ public interface CategoryService {
 
     void deleteCategory(Long categoryId, Long reassignToCategoryId);
 
-    Category updateCategory(Category category);
+    Category updateCategory(Long categoryId, String newName, String newDescription, Long newParentId);
     Set<Category> getSubCategories(Long categoryId);
     List<Product> getProductsUnderCategory(Long categoryId);
     void moveProducts(Long sourceCategoryId, Long targetCategoryId);
