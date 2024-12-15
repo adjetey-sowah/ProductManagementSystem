@@ -1,8 +1,11 @@
 package com.juls.lab.productmanagementsystem.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.juls.lab.productmanagementsystem.model.Product;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.ToString;
 
 import java.time.LocalDateTime;
 import java.util.HashSet;
@@ -10,7 +13,7 @@ import java.util.Set;
 
 @Entity
 @Data
-@Table(name = "categories")
+@ToString(exclude = {"parent","subCategories"})
 public class Category {
 
     @Id
@@ -22,14 +25,17 @@ public class Category {
 
     private String description;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "parent_id")
+    @JsonBackReference
     private Category parent;
 
-    @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JsonManagedReference
     private Set<Category> subCategories = new HashSet<>();
 
-    @OneToMany(mappedBy = "category")
+    @OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
+    @JsonManagedReference
     private Set<Product> products = new HashSet<>();
 
     @Column(name = "created_at")
@@ -47,5 +53,21 @@ public class Category {
     @PreUpdate
     protected void onUpdate() {
         updatedAt = LocalDateTime.now();
+    }
+
+
+    @Override
+    public int hashCode() {
+        // Avoid recursive calls by using a simple hash code calculation
+        return 31 * (name != null ? name.hashCode() : 0) +
+                (description != null ? description.hashCode() : 0);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Category category = (Category) obj;
+        return id != null && id.equals(category.id);
     }
 }
