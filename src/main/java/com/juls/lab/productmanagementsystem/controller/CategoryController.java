@@ -66,6 +66,19 @@ public class CategoryController {
         return ResponseEntity.ok(category);
     }
 
+    @PostMapping("/move-products")
+    public ResponseEntity<String> moveProducts(
+            @RequestParam Long sourceCategoryId,
+            @RequestParam Long targetCategoryId) {
+
+        try {
+            categoryService.moveProducts(sourceCategoryId, targetCategoryId);
+            return ResponseEntity.ok("Products moved successfully.");
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("Error moving products: " + e.getMessage());
+        }
+    }
+
     @DeleteMapping("/{categoryId}")
     public ResponseEntity<String> deleteCategory(
             @PathVariable Long categoryId,

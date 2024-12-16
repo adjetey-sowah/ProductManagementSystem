@@ -27,15 +27,15 @@ public class Category {
 
     @ManyToOne
     @JoinColumn(name = "parent_id")
-    @JsonBackReference
+    @JsonManagedReference
     private Category parent;
 
-    @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JsonManagedReference
+    @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL)
+    @JsonBackReference
     private Set<Category> subCategories = new HashSet<>();
 
-    @OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
-    @JsonManagedReference
+    @OneToMany(mappedBy = "category")
+    @JsonBackReference
     private Set<Product> products = new HashSet<>();
 
     @Column(name = "created_at")
