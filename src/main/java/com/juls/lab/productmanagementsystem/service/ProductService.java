@@ -4,6 +4,8 @@ import com.juls.lab.productmanagementsystem.exception.ProductNotFoundException;
 import com.juls.lab.productmanagementsystem.exception.ResourceNotFoundException;
 import com.juls.lab.productmanagementsystem.model.Category;
 import com.juls.lab.productmanagementsystem.model.Product;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -27,6 +29,7 @@ public interface ProductService{
     void deactivateProduct(Long id);
     void activateProduct(Long id);
     List<Product> getDiscountedProducts();
+    Page<Product> getAllProducts(Pageable pageable);
 
 
 

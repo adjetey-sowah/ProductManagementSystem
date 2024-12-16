@@ -10,10 +10,15 @@ import com.juls.lab.productmanagementsystem.service.CategoryService;
 import com.juls.lab.productmanagementsystem.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @RequiredArgsConstructor
 @Service
@@ -103,7 +108,21 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public List<Product> getProductsByByCategory(Long categoryId) throws ResourceNotFoundException {
         Category category = categoryService.getCategoryById(categoryId);
-        return this.productRepository.findProductByCategory(category);
+        Set<Product> products = new HashSet<>(); // Using Set to avoid duplicates
+        collectProductsRecursively(category, products);
+        return new ArrayList<>(products);
+    }
+
+    private void collectProductsRecursively(Category category, Set<Product> products) {
+        // Add products from current category
+        products.addAll(productRepository.findProductByCategory(category));
+
+        // Recursively add products from all subcategories
+        if (category.getSubCategories() != null && !category.getSubCategories().isEmpty()) {
+            for (Category subCategory : category.getSubCategories()) {
+                collectProductsRecursively(subCategory, products);
+            }
+        }
     }
 
     @Override
@@ -112,10 +131,21 @@ public class ProductServiceImpl implements ProductService {
                 .findByProductNameContainingIgnoreCase(keyword);
     }
 
-    @Override
-    public List<Product> getProductsByPriceRange(double minPrice, double maxPrice) {
-        return List.of();
-    }
+
+        @Override
+        public List<Product> getProductsByPriceRange(double minPrice, double maxPrice) {
+            // Validate price range
+            if (minPrice < 0 || maxPrice < 0) {
+                throw new IllegalArgumentException("Price values cannot be negative");
+            }
+
+            if (minPrice > maxPrice) {
+                throw new IllegalArgumentException("Minimum price cannot be greater than maximum price");
+            }
+
+            // Using JPA repository to fetch products within price range
+            return productRepository.findByPriceBetweenOrderByPriceAsc(minPrice, maxPrice);
+        }
 
     @SneakyThrows
     @Override
@@ -137,6 +167,12 @@ public class ProductServiceImpl implements ProductService {
     public List<Product> getDiscountedProducts() {
         return productRepository
                 .findByDiscountGreaterThan(BigDecimal.ZERO);
+    }
+
+    @Override
+    public Page<Product> getAllProducts(Pageable pageable) {
+        Page<Product> products = this.productRepository.findAll(pageable);
+        return products;
     }
 
 
