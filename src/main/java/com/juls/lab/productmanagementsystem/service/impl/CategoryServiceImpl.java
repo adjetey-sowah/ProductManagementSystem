@@ -6,8 +6,11 @@ import com.juls.lab.productmanagementsystem.repository.CategoryRepository;
 import com.juls.lab.productmanagementsystem.service.CategoryService;
 import com.juls.lab.productmanagementsystem.util.BinaryTreeNode;
 import com.juls.lab.productmanagementsystem.util.ProductCategoryBinaryTree;
+import jakarta.annotation.PostConstruct;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -68,12 +71,10 @@ public class CategoryServiceImpl implements CategoryService {
                     product.setCategory(null);
                 }
             }
-
             // Remove from parent category if exists
             if (categoryToDelete.getParent() != null) {
                 categoryToDelete.getParent().getSubCategories().remove(categoryToDelete);
             }
-
             // Delete the category and update binary tree
             categoryRepository.delete(categoryToDelete);
             binaryTree.removeCategory(categoryToDelete.getName());
@@ -148,5 +149,22 @@ public class CategoryServiceImpl implements CategoryService {
         return roots;
     }
 
+    @Override
+    public Page<Category> getAllCategories(Pageable pageable) {
+        return categoryRepository.findAll(pageable);
+    }
+
+
+    @PostConstruct
+    private void loadBinaryTree() {
+        List<Category> categories = this.categoryRepository.findAll();
+
+        if (!categories.isEmpty()) {
+            categories.forEach(binaryTree::insertCategory);
+        } else {
+            // Optionally, you can log or handle the case where categories are empty or null
+            System.out.println("No categories found to insert into the binary tree.");
+        }
+    }
 
 }
