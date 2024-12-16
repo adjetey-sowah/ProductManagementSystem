@@ -78,7 +78,7 @@ public class ProductServiceImpl implements ProductService {
     public boolean isProductInStock(Long id) throws ProductNotFoundException {
         Product product = this.productRepository.findById(id)
                 .orElseThrow(() -> new ProductNotFoundException("Product not found with id "+id));
-        return false;
+        return product.getQuantityInStock()>0;
     }
 
     @Override

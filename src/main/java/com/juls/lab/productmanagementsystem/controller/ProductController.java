@@ -1,7 +1,9 @@
 package com.juls.lab.productmanagementsystem.controller;
 
+import com.juls.lab.productmanagementsystem.dto.ProductDTO;
 import com.juls.lab.productmanagementsystem.exception.ProductNotFoundException;
 import com.juls.lab.productmanagementsystem.exception.ResourceNotFoundException;
+import com.juls.lab.productmanagementsystem.model.Category;
 import com.juls.lab.productmanagementsystem.model.Product;
 import com.juls.lab.productmanagementsystem.service.CategoryService;
 import com.juls.lab.productmanagementsystem.service.ProductService;
@@ -17,6 +19,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
@@ -125,8 +128,16 @@ public class ProductController {
     @PostMapping
     @Operation(summary = "Create a new product")
     @ApiResponse(responseCode = "201", description = "Product created successfully")
-    public ResponseEntity<Product> createProduct(@Valid @RequestBody Product product) {
-        return new ResponseEntity<>(productService.createProduct(product), HttpStatus.CREATED);
+    public ResponseEntity<Product> createProduct(@Valid @RequestBody ProductDTO product) throws ProductNotFoundException {
+        Product newProduct = new Product();
+        newProduct.setProductName(product.getProductName());
+        newProduct.setDescription(product.getDescription());
+        newProduct.setPrice(product.getPrice());
+        newProduct.setQuantityInStock(product.getQuantityInStock());
+        Category category = this.categoryService.getCategoryById(product.getCategoryId());
+        newProduct.setDiscount(BigDecimal.valueOf(product.getDiscount()));
+        newProduct.setCategory(category);
+        return new ResponseEntity<>(productService.createProduct(newProduct), HttpStatus.CREATED);
     }
 
 

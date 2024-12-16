@@ -1,5 +1,6 @@
 package com.juls.lab.productmanagementsystem.service.impl;
 
+import com.juls.lab.productmanagementsystem.exception.ProductNotFoundException;
 import com.juls.lab.productmanagementsystem.model.Category;
 import com.juls.lab.productmanagementsystem.model.Product;
 import com.juls.lab.productmanagementsystem.repository.CategoryRepository;
@@ -152,6 +153,12 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public Page<Category> getAllCategories(Pageable pageable) {
         return categoryRepository.findAll(pageable);
+    }
+
+    @Override
+    public Category getCategoryByName(String categoryName) throws ProductNotFoundException {
+        return this.categoryRepository.findCategoryByNameContainingIgnoreCase(categoryName)
+                .orElseThrow(() -> new ProductNotFoundException("Product not found"));
     }
 
 

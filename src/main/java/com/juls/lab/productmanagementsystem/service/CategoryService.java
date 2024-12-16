@@ -1,5 +1,6 @@
 package com.juls.lab.productmanagementsystem.service;
 
+import com.juls.lab.productmanagementsystem.exception.ProductNotFoundException;
 import com.juls.lab.productmanagementsystem.model.Category;
 import com.juls.lab.productmanagementsystem.model.Product;
 import jakarta.transaction.Transactional;
@@ -23,4 +24,5 @@ public interface CategoryService {
     void moveProducts(Long sourceCategoryId, Long targetCategoryId);
     List<Category> getCategoryTree();
     Page<Category> getAllCategories(Pageable pageable);
+    Category getCategoryByName(String categoryName) throws ProductNotFoundException;
 }

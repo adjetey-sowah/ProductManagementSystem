@@ -10,6 +10,7 @@ import com.juls.lab.productmanagementsystem.model.Category;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.Objects;
 import java.util.Set;
 
 @Data
@@ -36,8 +37,8 @@ public class Product {
 
     private BigDecimal discount;
 
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JsonBackReference
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    @JsonManagedReference
     private Set<ProductAttribute> productAttribute;
 
     private LocalDateTime createdAt;
@@ -54,6 +55,18 @@ public class Product {
         updatedAt = LocalDateTime.now();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return Objects.equals(productId, product.getProductId());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(productId);
+    }
 
 
 
