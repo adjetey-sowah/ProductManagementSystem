@@ -1,8 +1,8 @@
 package com.juls.lab.productmanagementsystem.controller;
 
 import com.juls.lab.productmanagementsystem.dto.CategoryDTO;
-import com.juls.lab.productmanagementsystem.model.Category;
-import com.juls.lab.productmanagementsystem.model.Product;
+import com.juls.lab.productmanagementsystem.data.model.Category;
+import com.juls.lab.productmanagementsystem.data.model.Product;
 import com.juls.lab.productmanagementsystem.service.CategoryService;
 
 import lombok.RequiredArgsConstructor;
@@ -13,7 +13,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.URI;
 import java.util.List;
 import java.util.Set;
 

@@ -2,9 +2,9 @@ package com.juls.lab.productmanagementsystem.service.impl;
 
 import com.juls.lab.productmanagementsystem.exception.ProductNotFoundException;
 import com.juls.lab.productmanagementsystem.exception.ResourceNotFoundException;
-import com.juls.lab.productmanagementsystem.model.Category;
-import com.juls.lab.productmanagementsystem.model.Product;
-import com.juls.lab.productmanagementsystem.model.ProductAttribute;
+import com.juls.lab.productmanagementsystem.data.model.Category;
+import com.juls.lab.productmanagementsystem.data.model.Product;
+import com.juls.lab.productmanagementsystem.data.model.ProductAttribute;
 import com.juls.lab.productmanagementsystem.repository.ProductRepository;
 import com.juls.lab.productmanagementsystem.service.CategoryService;
 import com.juls.lab.productmanagementsystem.service.ProductService;

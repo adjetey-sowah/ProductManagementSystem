@@ -1,6 +1,6 @@
 package com.juls.lab.productmanagementsystem.repository;
 
-import com.juls.lab.productmanagementsystem.model.Category;
+import com.juls.lab.productmanagementsystem.data.model.Category;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

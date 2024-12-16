@@ -1,8 +1,7 @@
-package com.juls.lab.productmanagementsystem.model;
+package com.juls.lab.productmanagementsystem.data.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.juls.lab.productmanagementsystem.model.Product;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.ToString;

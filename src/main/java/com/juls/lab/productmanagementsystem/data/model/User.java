@@ -1,4 +1,4 @@
-package com.juls.lab.productmanagementsystem.model;
+package com.juls.lab.productmanagementsystem.data.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -16,9 +16,13 @@ public class User {
     private String username;
     private String password;
 
-    @NaturalId(mutable = false)
+    @NaturalId(mutable = true)
     private String email;
 
+    @Enumerated
+    @Column(name = "role")
     private Role role;
+
+    private boolean isEnabled = false;
 
 }

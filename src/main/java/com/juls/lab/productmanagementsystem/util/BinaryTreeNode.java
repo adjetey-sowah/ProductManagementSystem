@@ -1,7 +1,7 @@
 package com.juls.lab.productmanagementsystem.util;
 
-import com.juls.lab.productmanagementsystem.model.Category;
-import com.juls.lab.productmanagementsystem.model.Product;
+import com.juls.lab.productmanagementsystem.data.model.Category;
+import com.juls.lab.productmanagementsystem.data.model.Product;
 import lombok.Data;
 
 import java.util.ArrayList;

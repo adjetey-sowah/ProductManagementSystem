@@ -1,11 +1,10 @@
 package com.juls.lab.productmanagementsystem.service.impl;
 
 import com.juls.lab.productmanagementsystem.exception.ProductNotFoundException;
-import com.juls.lab.productmanagementsystem.model.Category;
-import com.juls.lab.productmanagementsystem.model.Product;
+import com.juls.lab.productmanagementsystem.data.model.Category;
+import com.juls.lab.productmanagementsystem.data.model.Product;
 import com.juls.lab.productmanagementsystem.repository.CategoryRepository;
 import com.juls.lab.productmanagementsystem.service.CategoryService;
-import com.juls.lab.productmanagementsystem.util.BinaryTreeNode;
 import com.juls.lab.productmanagementsystem.util.ProductCategoryBinaryTree;
 import jakarta.annotation.PostConstruct;
 import jakarta.transaction.Transactional;
