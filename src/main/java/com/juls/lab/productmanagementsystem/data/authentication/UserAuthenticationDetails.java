@@ -13,10 +13,10 @@ import java.util.List;
 
 public class UserAuthenticationDetails implements UserDetails {
 
-    private String username;
-    private String password;
-    private boolean isEnabled;
-    private Collection <? extends  GrantedAuthority> authorities;
+    private final String username;
+    private final String password;
+    private final boolean isEnabled;
+    private final Collection <? extends  GrantedAuthority> authorities;
 
 
     public UserAuthenticationDetails(User user){
