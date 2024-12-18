@@ -1,8 +1,8 @@
 package com.juls.lab.productmanagementsystem.controller;
 
 import com.juls.lab.productmanagementsystem.dto.CategoryDTO;
-import com.juls.lab.productmanagementsystem.model.Category;
-import com.juls.lab.productmanagementsystem.model.Product;
+import com.juls.lab.productmanagementsystem.data.model.Category;
+import com.juls.lab.productmanagementsystem.data.model.Product;
 import com.juls.lab.productmanagementsystem.service.CategoryService;
 
 import lombok.RequiredArgsConstructor;
@@ -13,7 +13,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.URI;
 import java.util.List;
 import java.util.Set;
 
@@ -64,6 +63,19 @@ public class CategoryController {
     public ResponseEntity<Category> getCategoryById(@PathVariable Long categoryId){
         Category category = this.categoryService.getCategoryById(categoryId);
         return ResponseEntity.ok(category);
+    }
+
+    @PostMapping("/move-products")
+    public ResponseEntity<String> moveProducts(
+            @RequestParam Long sourceCategoryId,
+            @RequestParam Long targetCategoryId) {
+
+        try {
+            categoryService.moveProducts(sourceCategoryId, targetCategoryId);
+            return ResponseEntity.ok("Products moved successfully.");
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("Error moving products: " + e.getMessage());
+        }
     }
 
     @DeleteMapping("/{categoryId}")

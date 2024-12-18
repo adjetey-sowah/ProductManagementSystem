@@ -1,11 +1,10 @@
 package com.juls.lab.productmanagementsystem.service.impl;
 
 import com.juls.lab.productmanagementsystem.exception.ProductNotFoundException;
-import com.juls.lab.productmanagementsystem.model.Category;
-import com.juls.lab.productmanagementsystem.model.Product;
+import com.juls.lab.productmanagementsystem.data.model.Category;
+import com.juls.lab.productmanagementsystem.data.model.Product;
 import com.juls.lab.productmanagementsystem.repository.CategoryRepository;
 import com.juls.lab.productmanagementsystem.service.CategoryService;
-import com.juls.lab.productmanagementsystem.util.BinaryTreeNode;
 import com.juls.lab.productmanagementsystem.util.ProductCategoryBinaryTree;
 import jakarta.annotation.PostConstruct;
 import jakarta.transaction.Transactional;
@@ -14,6 +13,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -128,6 +128,9 @@ public class CategoryServiceImpl implements CategoryService {
         }
         // Clear products in the source category
         sourceCategory.getProducts().clear();
+        sourceCategory.setUpdatedAt(LocalDateTime.now());
+        targetCategory.setUpdatedAt(LocalDateTime.now());
+
         categoryRepository.save(sourceCategory);
         categoryRepository.save(targetCategory);
     }

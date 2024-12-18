@@ -1,12 +1,10 @@
 package com.juls.lab.productmanagementsystem.service;
 
 import com.juls.lab.productmanagementsystem.exception.ProductNotFoundException;
-import com.juls.lab.productmanagementsystem.model.Category;
-import com.juls.lab.productmanagementsystem.model.Product;
-import jakarta.transaction.Transactional;
+import com.juls.lab.productmanagementsystem.data.model.Category;
+import com.juls.lab.productmanagementsystem.data.model.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Set;

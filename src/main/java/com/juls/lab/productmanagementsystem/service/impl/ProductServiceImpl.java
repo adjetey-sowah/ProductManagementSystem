@@ -2,9 +2,9 @@ package com.juls.lab.productmanagementsystem.service.impl;
 
 import com.juls.lab.productmanagementsystem.exception.ProductNotFoundException;
 import com.juls.lab.productmanagementsystem.exception.ResourceNotFoundException;
-import com.juls.lab.productmanagementsystem.model.Category;
-import com.juls.lab.productmanagementsystem.model.Product;
-import com.juls.lab.productmanagementsystem.model.ProductAttribute;
+import com.juls.lab.productmanagementsystem.data.model.Category;
+import com.juls.lab.productmanagementsystem.data.model.Product;
+import com.juls.lab.productmanagementsystem.data.model.ProductAttribute;
 import com.juls.lab.productmanagementsystem.repository.ProductRepository;
 import com.juls.lab.productmanagementsystem.service.CategoryService;
 import com.juls.lab.productmanagementsystem.service.ProductService;
@@ -15,6 +15,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -175,5 +176,21 @@ public class ProductServiceImpl implements ProductService {
         return products;
     }
 
+
+    public void moveProductToCategory(Long productId, Long targetCategoryId) {
+        Product product = productRepository.findById(productId)
+                .orElseThrow(() -> new IllegalArgumentException("Product not found"));
+
+        Category targetCategory = categoryService.getCategoryById(targetCategoryId);
+        // Move the product to the target category
+        product.setCategory(targetCategory);
+
+        // Update the product's category in the database
+        productRepository.save(product);
+
+        // Optionally, update the target category's updatedAt timestamp
+        targetCategory.setUpdatedAt(LocalDateTime.now());
+        categoryService.createCategory(targetCategory.getName(),targetCategory.getDescription(),targetCategory.getParent().getId());
+    }
 
 }

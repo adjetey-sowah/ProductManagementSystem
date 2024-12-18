@@ -1,8 +1,7 @@
-package com.juls.lab.productmanagementsystem.model;
+package com.juls.lab.productmanagementsystem.data.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.juls.lab.productmanagementsystem.model.Product;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.ToString;
@@ -27,15 +26,15 @@ public class Category {
 
     @ManyToOne
     @JoinColumn(name = "parent_id")
-    @JsonBackReference
+    @JsonManagedReference
     private Category parent;
 
-    @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JsonManagedReference
+    @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL)
+    @JsonBackReference
     private Set<Category> subCategories = new HashSet<>();
 
-    @OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
-    @JsonManagedReference
+    @OneToMany(mappedBy = "category")
+    @JsonBackReference
     private Set<Product> products = new HashSet<>();
 
     @Column(name = "created_at")
