@@ -1,6 +1,6 @@
 package com.juls.lab.productmanagementsystem.config;
 
-import com.juls.lab.productmanagementsystem.security.jwt.UserDetailsServiceImpl;
+import com.juls.lab.productmanagementsystem.security.UserDetailsServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

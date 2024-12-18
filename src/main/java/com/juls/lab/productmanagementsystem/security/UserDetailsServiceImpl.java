@@ -1,6 +1,5 @@
-package com.juls.lab.productmanagementsystem.security.jwt;
+package com.juls.lab.productmanagementsystem.security;
 
-import com.juls.lab.productmanagementsystem.data.model.User;
 import com.juls.lab.productmanagementsystem.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
