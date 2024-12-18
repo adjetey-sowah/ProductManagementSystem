@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 @Slf4j
 public class UserServiceImpl {
 
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     public User getUserByEmail(String email){
         return this.userRepository.findByEmail(email)
