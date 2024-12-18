@@ -1,0 +1,39 @@
+2024-12-18 12:14:06 [main] INFO  c.j.l.p.ProductManagementSystemApplication - Starting ProductManagementSystemApplication using Java 21.0.5 with PID 24488 (C:\Users\JuliusAdjeteySowah\OneDrive - AmaliTech gGmbH\Documents\Labs\ProductManagementSystem\target\classes started by JuliusAdjeteySowah in C:\Users\JuliusAdjeteySowah\OneDrive - AmaliTech gGmbH\Documents\Labs\ProductManagementSystem)
+2024-12-18 12:14:06 [main] DEBUG c.j.l.p.ProductManagementSystemApplication - Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-18 12:14:06 [main] INFO  c.j.l.p.ProductManagementSystemApplication - The following 1 profile is active: "dev"
+2024-12-18 12:14:18 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-18 12:14:19 [main] INFO  c.j.l.p.ProductManagementSystemApplication - Started ProductManagementSystemApplication in 15.299 seconds (process running for 17.52)
+2024-12-18 12:14:37 [http-nio-8090-exec-1] INFO  c.j.l.p.i.LoggingInterceptor - Request URL : http://localhost:8090/swagger-ui/index.html | Method: GET
+2024-12-18 12:14:37 [http-nio-8090-exec-1] WARN  c.j.l.p.i.PerformanceInterceptor - PerformanceInterceptor is active for request: http://localhost:8090/swagger-ui/index.html
+2024-12-18 12:14:37 [http-nio-8090-exec-1] INFO  c.j.l.p.i.LoggingInterceptor - Response Status: 200 | Time Taken: 30ms
+2024-12-18 12:14:37 [http-nio-8090-exec-2] INFO  c.j.l.p.i.LoggingInterceptor - Request URL : http://localhost:8090/swagger-ui/swagger-ui.css | Method: GET
+2024-12-18 12:14:37 [http-nio-8090-exec-2] WARN  c.j.l.p.i.PerformanceInterceptor - PerformanceInterceptor is active for request: http://localhost:8090/swagger-ui/swagger-ui.css
+2024-12-18 12:14:37 [http-nio-8090-exec-3] INFO  c.j.l.p.i.LoggingInterceptor - Request URL : http://localhost:8090/swagger-ui/index.css | Method: GET
+2024-12-18 12:14:37 [http-nio-8090-exec-3] WARN  c.j.l.p.i.PerformanceInterceptor - PerformanceInterceptor is active for request: http://localhost:8090/swagger-ui/index.css
+2024-12-18 12:14:37 [http-nio-8090-exec-5] INFO  c.j.l.p.i.LoggingInterceptor - Request URL : http://localhost:8090/swagger-ui/swagger-ui-standalone-preset.js | Method: GET
+2024-12-18 12:14:37 [http-nio-8090-exec-5] WARN  c.j.l.p.i.PerformanceInterceptor - PerformanceInterceptor is active for request: http://localhost:8090/swagger-ui/swagger-ui-standalone-preset.js
+2024-12-18 12:14:37 [http-nio-8090-exec-4] INFO  c.j.l.p.i.LoggingInterceptor - Request URL : http://localhost:8090/swagger-ui/swagger-ui-bundle.js | Method: GET
+2024-12-18 12:14:37 [http-nio-8090-exec-4] WARN  c.j.l.p.i.PerformanceInterceptor - PerformanceInterceptor is active for request: http://localhost:8090/swagger-ui/swagger-ui-bundle.js
+2024-12-18 12:14:37 [http-nio-8090-exec-3] INFO  c.j.l.p.i.LoggingInterceptor - Response Status: 200 | Time Taken: 1ms
+2024-12-18 12:14:37 [http-nio-8090-exec-6] INFO  c.j.l.p.i.LoggingInterceptor - Request URL : http://localhost:8090/swagger-ui/swagger-initializer.js | Method: GET
+2024-12-18 12:14:37 [http-nio-8090-exec-6] WARN  c.j.l.p.i.PerformanceInterceptor - PerformanceInterceptor is active for request: http://localhost:8090/swagger-ui/swagger-initializer.js
+2024-12-18 12:14:37 [http-nio-8090-exec-2] INFO  c.j.l.p.i.LoggingInterceptor - Response Status: 200 | Time Taken: 3ms
+2024-12-18 12:14:37 [http-nio-8090-exec-5] INFO  c.j.l.p.i.LoggingInterceptor - Response Status: 200 | Time Taken: 8ms
+2024-12-18 12:14:37 [http-nio-8090-exec-4] INFO  c.j.l.p.i.LoggingInterceptor - Response Status: 200 | Time Taken: 17ms
+2024-12-18 12:14:37 [http-nio-8090-exec-6] INFO  c.j.l.p.i.LoggingInterceptor - Response Status: 200 | Time Taken: 21ms
+2024-12-18 12:14:37 [http-nio-8090-exec-7] INFO  c.j.l.p.i.LoggingInterceptor - Request URL : http://localhost:8090/swagger-ui/favicon-16x16.png | Method: GET
+2024-12-18 12:14:37 [http-nio-8090-exec-7] WARN  c.j.l.p.i.PerformanceInterceptor - PerformanceInterceptor is active for request: http://localhost:8090/swagger-ui/favicon-16x16.png
+2024-12-18 12:14:37 [http-nio-8090-exec-7] INFO  c.j.l.p.i.LoggingInterceptor - Response Status: 200 | Time Taken: 2ms
+2024-12-18 12:14:37 [http-nio-8090-exec-8] INFO  c.j.l.p.i.LoggingInterceptor - Request URL : http://localhost:8090/v3/api-docs/swagger-config | Method: GET
+2024-12-18 12:14:37 [http-nio-8090-exec-8] WARN  c.j.l.p.i.PerformanceInterceptor - PerformanceInterceptor is active for request: http://localhost:8090/v3/api-docs/swagger-config
+2024-12-18 12:14:37 [http-nio-8090-exec-8] INFO  c.j.l.p.i.LoggingInterceptor - Response Status: 200 | Time Taken: 18ms
+2024-12-18 12:14:37 [http-nio-8090-exec-9] INFO  c.j.l.p.i.LoggingInterceptor - Request URL : http://localhost:8090/v3/api-docs | Method: GET
+2024-12-18 12:14:37 [http-nio-8090-exec-9] WARN  c.j.l.p.i.PerformanceInterceptor - PerformanceInterceptor is active for request: http://localhost:8090/v3/api-docs
+2024-12-18 12:14:38 [http-nio-8090-exec-9] INFO  c.j.l.p.i.LoggingInterceptor - Response Status: 200 | Time Taken: 719ms
+2024-12-18 12:15:03 [http-nio-8090-exec-10] INFO  c.j.l.p.i.LoggingInterceptor - Request URL : http://localhost:8090/api/v1/products/all | Method: GET
+2024-12-18 12:15:03 [http-nio-8090-exec-10] WARN  c.j.l.p.i.PerformanceInterceptor - PerformanceInterceptor is active for request: http://localhost:8090/api/v1/products/all
+2024-12-18 12:15:03 [http-nio-8090-exec-10] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-12-18 12:15:03 [http-nio-8090-exec-10] INFO  c.j.l.p.i.LoggingInterceptor - Response Status: 200 | Time Taken: 53ms
