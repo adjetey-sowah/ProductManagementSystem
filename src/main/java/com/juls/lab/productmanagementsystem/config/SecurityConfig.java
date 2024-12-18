@@ -1,6 +1,6 @@
 package com.juls.lab.productmanagementsystem.config;
 
-import com.juls.lab.productmanagementsystem.service.UsersDetailService;
+import com.juls.lab.productmanagementsystem.security.jwt.UserDetailsServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,7 +19,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @RequiredArgsConstructor
 public class SecurityConfig {
 
-    private final UsersDetailService usersDetailService;
+    private final UserDetailsServiceImpl userDetailService;
 
     @Bean
     public SecurityFilterChain configure(HttpSecurity http) throws Exception {
@@ -37,14 +37,14 @@ public class SecurityConfig {
 
     /**
      * Configures the authentication manager with a DAO authentication provider
-     * that uses the {@link UsersDetailService} and a {@link PasswordEncoder}.
+     * that uses the {@link UserDetailsServiceImpl} and a {@link PasswordEncoder}.
      *
      * @return an {@link AuthenticationManager} configured with the DAO authentication provider
      */
     @Bean
     public AuthenticationManager authenticationManager(){
         DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
-        authenticationProvider.setUserDetailsService(usersDetailService);
+        authenticationProvider.setUserDetailsService(userDetailService);
         authenticationProvider.setPasswordEncoder(passwordEncoder());
         return new ProviderManager(authenticationProvider);
     }
