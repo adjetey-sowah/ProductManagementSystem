@@ -9,13 +9,7 @@ public class ProductManagementSystemApplication {
 
     public static void main(String[] args) {
 
-        // Load .env file into the environment
-        Dotenv dotenv = Dotenv.configure()
-                .directory("./") // Specify the directory of the .env file
-                .load();
 
-        // Optional: Print a variable to confirm it was loaded
-        System.out.println("MongoDB URL: " + dotenv.get("MONGO_DB_URL"));
 
         SpringApplication.run(ProductManagementSystemApplication.class, args);
 
