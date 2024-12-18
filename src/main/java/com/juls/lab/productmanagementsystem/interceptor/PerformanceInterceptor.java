@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.web.servlet.ModelAndView;
 
 @Component
 public class PerformanceInterceptor implements HandlerInterceptor {
@@ -16,6 +17,7 @@ public class PerformanceInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        logger.warn("PerformanceInterceptor is active for request: {}", request.getRequestURL());
         request.setAttribute("startTime", System.currentTimeMillis());
         return true;
     }
