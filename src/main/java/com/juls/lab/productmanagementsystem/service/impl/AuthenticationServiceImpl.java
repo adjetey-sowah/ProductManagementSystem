@@ -56,6 +56,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
                 .build();
     }
 
+<<<<<<< Updated upstream
     @Override
     public AuthResponse authenticate(LoginRequest request) {
         System.out.println(request.getEmail() + " " + request.getPassword());
@@ -78,6 +79,24 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         }
 
         System.out.println("Done authenticating");
+=======
+
+    @Override
+    public AuthResponse authenticate(LoginRequest request){
+        log.info("Authenticating user {}",request);
+
+
+        authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(
+                        request.getEmail(),
+                        request.getPassword()
+                )
+        );
+
+        User user = this.userService.getUserByEmail(request.getEmail());
+
+        log.info("I am done authenticating the user");
+>>>>>>> Stashed changes
         var jwt = jwtService.generateToken(user);
         var refreshToken = jwtService.generateRefreshToken(user);
 

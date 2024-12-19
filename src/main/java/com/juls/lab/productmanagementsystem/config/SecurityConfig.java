@@ -67,6 +67,10 @@ public class SecurityConfig {
         return authenticationProvider;
     }
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws  Exception{
         System.out.println("I am about to authenticate");
