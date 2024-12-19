@@ -56,30 +56,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
                 .build();
     }
 
-<<<<<<< Updated upstream
-    @Override
-    public AuthResponse authenticate(LoginRequest request) {
-        System.out.println(request.getEmail() + " " + request.getPassword());
 
-        User user = this.userService.getUserByEmail(request.getEmail());
-
-        // Check if the user is found
-        if (user == null) {
-            log.error("User not found for email: {}", request.getEmail());
-            throw new BadCredentialsException("Invalid email or password");
-        }
-
-        log.info("User Role = {}", user.getRole());
-        log.info("Authenticating user: {}", request.getEmail());
-
-        // Check password match
-        if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
-            log.error("Password mismatch for user: {}", request.getEmail());
-            throw new BadCredentialsException("Invalid email or password");
-        }
-
-        System.out.println("Done authenticating");
-=======
 
     @Override
     public AuthResponse authenticate(LoginRequest request){
@@ -96,7 +73,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
         User user = this.userService.getUserByEmail(request.getEmail());
 
         log.info("I am done authenticating the user");
->>>>>>> Stashed changes
+
         var jwt = jwtService.generateToken(user);
         var refreshToken = jwtService.generateRefreshToken(user);
 
