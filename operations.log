@@ -1,0 +1,6 @@
+User: Anonymous | Operation: /api/auth/login | Method: POST | Timestamp: 2024-12-19T15:35:57.175632400
+User: Anonymous | Completed Operation: /api/auth/login | Response Status: 200 | Timestamp: 2024-12-19T15:35:57.645454700
+User: Anonymous | Operation: /api/reviews/3 | Method: GET | Timestamp: 2024-12-19T15:37:09.340315
+User: Anonymous | Completed Operation: /api/reviews/3 | Response Status: 200 | Timestamp: 2024-12-19T15:37:10.446310300
+User: Anonymous | Operation: /api/reviews/3 | Method: GET | Timestamp: 2024-12-19T15:38:48.327904800
+User: Anonymous | Completed Operation: /api/reviews/3 | Response Status: 200 | Timestamp: 2024-12-19T15:38:49.367804500
