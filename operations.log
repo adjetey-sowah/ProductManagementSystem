@@ -92,3 +92,77 @@ User: Anonymous | Operation: /v3/api-docs/swagger-config | Method: GET | Timesta
 User: Anonymous | Completed Operation: /v3/api-docs/swagger-config | Response Status: 200 | Timestamp: 2024-12-19T17:10:52.048153500
 User: Anonymous | Operation: /v3/api-docs | Method: GET | Timestamp: 2024-12-19T17:10:52.107146100
 User: Anonymous | Completed Operation: /v3/api-docs | Response Status: 200 | Timestamp: 2024-12-19T17:10:53.524004600
+User: Anonymous | Operation: /swagger-ui/index.html | Method: GET | Timestamp: 2024-12-19T20:53:20.053612100
+User: Anonymous | Completed Operation: /swagger-ui/index.html | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.084708200
+User: Anonymous | Operation: /swagger-ui/swagger-ui.css | Method: GET | Timestamp: 2024-12-19T20:53:20.121398500
+User: Anonymous | Operation: /swagger-ui/swagger-ui-bundle.js | Method: GET | Timestamp: 2024-12-19T20:53:20.122396500
+User: Anonymous | Operation: /swagger-ui/swagger-ui-standalone-preset.js | Method: GET | Timestamp: 2024-12-19T20:53:20.122396500
+User: Anonymous | Operation: /swagger-ui/swagger-initializer.js | Method: GET | Timestamp: 2024-12-19T20:53:20.122675900
+User: Anonymous | Operation: /swagger-ui/index.css | Method: GET | Timestamp: 2024-12-19T20:53:20.125391100
+User: Anonymous | Completed Operation: /swagger-ui/swagger-ui.css | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.134365200
+User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-standalone-preset.js | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.149711700
+User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-bundle.js | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.152071800
+User: Anonymous | Completed Operation: /swagger-ui/index.css | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.153378200
+User: Anonymous | Completed Operation: /swagger-ui/swagger-initializer.js | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.164559300
+User: Anonymous | Operation: /swagger-ui/favicon-16x16.png | Method: GET | Timestamp: 2024-12-19T20:53:20.282719400
+User: Anonymous | Completed Operation: /swagger-ui/favicon-16x16.png | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.292765300
+User: Anonymous | Operation: /v3/api-docs/swagger-config | Method: GET | Timestamp: 2024-12-19T20:53:20.317779600
+User: Anonymous | Completed Operation: /v3/api-docs/swagger-config | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.353056900
+User: Anonymous | Operation: /v3/api-docs | Method: GET | Timestamp: 2024-12-19T20:53:20.380485600
+User: Anonymous | Completed Operation: /v3/api-docs | Response Status: 200 | Timestamp: 2024-12-19T20:53:21.292615100
+User: Anonymous | Operation: /swagger-ui/index.html | Method: GET | Timestamp: 2024-12-19T20:54:12.764625500
+User: Anonymous | Completed Operation: /swagger-ui/index.html | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.772468
+User: Anonymous | Operation: /swagger-ui/swagger-ui.css | Method: GET | Timestamp: 2024-12-19T20:54:12.789708500
+User: Anonymous | Operation: /swagger-ui/swagger-ui-standalone-preset.js | Method: GET | Timestamp: 2024-12-19T20:54:12.793987600
+User: Anonymous | Operation: /swagger-ui/swagger-initializer.js | Method: GET | Timestamp: 2024-12-19T20:54:12.793987600
+User: Anonymous | Operation: /swagger-ui/swagger-ui-bundle.js | Method: GET | Timestamp: 2024-12-19T20:54:12.793987600
+User: Anonymous | Operation: /swagger-ui/index.css | Method: GET | Timestamp: 2024-12-19T20:54:12.794694600
+User: Anonymous | Completed Operation: /swagger-ui/swagger-ui.css | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.799697100
+User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-standalone-preset.js | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.805681600
+User: Anonymous | Completed Operation: /swagger-ui/swagger-initializer.js | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.807453900
+User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-bundle.js | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.826415200
+User: Anonymous | Completed Operation: /swagger-ui/index.css | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.831395900
+User: Anonymous | Operation: /v3/api-docs/swagger-config | Method: GET | Timestamp: 2024-12-19T20:54:12.958443300
+User: Anonymous | Completed Operation: /v3/api-docs/swagger-config | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.963461800
+User: Anonymous | Operation: /v3/api-docs | Method: GET | Timestamp: 2024-12-19T20:54:12.986391
+User: Anonymous | Completed Operation: /v3/api-docs | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.995392
+User: Anonymous | Operation: /api/reviews/3 | Method: GET | Timestamp: 2024-12-19T20:54:53.842246700
+User: Anonymous | Completed Operation: /api/reviews/3 | Response Status: 401 | Timestamp: 2024-12-19T20:54:53.846336
+User: Anonymous | Operation: /api/reviews/2 | Method: GET | Timestamp: 2024-12-19T20:55:07.971403
+User: Anonymous | Completed Operation: /api/reviews/2 | Response Status: 401 | Timestamp: 2024-12-19T20:55:07.976502200
+User: Anonymous | Operation: /api/analytics/2/view | Method: POST | Timestamp: 2024-12-19T20:55:25.641289200
+User: Anonymous | Completed Operation: /api/analytics/2/view | Response Status: 401 | Timestamp: 2024-12-19T20:55:25.644574600
+User: Anonymous | Operation: /api/analytics/3/view | Method: POST | Timestamp: 2024-12-19T20:55:36.915635600
+User: Anonymous | Completed Operation: /api/analytics/3/view | Response Status: 401 | Timestamp: 2024-12-19T20:55:36.920820500
+User: Anonymous | Operation: /api/auth/login | Method: POST | Timestamp: 2024-12-19T20:56:33.638986400
+User: Anonymous | Completed Operation: /api/auth/login | Response Status: 200 | Timestamp: 2024-12-19T20:56:33.884808100
+User: grace@gmail.com | Operation: /api/analytics/3/view | Method: POST | Timestamp: 2024-12-19T20:59:14.576882
+User: grace@gmail.com | Completed Operation: /api/analytics/3/view | Response Status: 200 | Timestamp: 2024-12-19T20:59:14.946813600
+User: Anonymous | Operation: /api/auth/login | Method: POST | Timestamp: 2024-12-19T21:04:32.559653
+User: Anonymous | Completed Operation: /api/auth/login | Response Status: 200 | Timestamp: 2024-12-19T21:04:32.652600100
+User: Anonymous | Operation: /api/auth/login | Method: POST | Timestamp: 2024-12-19T21:08:08.482733800
+User: Anonymous | Completed Operation: /api/auth/login | Response Status: 200 | Timestamp: 2024-12-19T21:08:08.582817900
+User: moses@gmail.com | Operation: /api/analytics/3/view | Method: POST | Timestamp: 2024-12-19T21:09:21.799631
+User: moses@gmail.com | Completed Operation: /api/analytics/3/view | Response Status: 200 | Timestamp: 2024-12-19T21:09:22.078990200
+User: Anonymous | Operation: /api/analytics/3/view | Method: POST | Timestamp: 2024-12-19T21:09:45.931538900
+User: Anonymous | Completed Operation: /api/analytics/3/view | Response Status: 401 | Timestamp: 2024-12-19T21:09:45.935127300
+User: moses@gmail.com | Operation: /api/analytics/3/purchase | Method: POST | Timestamp: 2024-12-19T21:12:16.150939600
+User: moses@gmail.com | Completed Operation: /api/analytics/3/purchase | Response Status: 200 | Timestamp: 2024-12-19T21:12:16.427450700
+User: moses@gmail.com | Operation: /api/v1/categories/all | Method: POST | Timestamp: 2024-12-19T21:16:23.716382
+User: moses@gmail.com | Completed Operation: /api/v1/categories/all | Response Status: 404 | Timestamp: 2024-12-19T21:16:23.725392500
+User: moses@gmail.com | Operation: /api/v1/categories/all | Method: GET | Timestamp: 2024-12-19T21:16:29.984905100
+User: moses@gmail.com | Completed Operation: /api/v1/categories/all | Response Status: 404 | Timestamp: 2024-12-19T21:16:29.996760100
+User: moses@gmail.com | Operation: /api/v1/category/all | Method: GET | Timestamp: 2024-12-19T21:16:53.551320500
+User: moses@gmail.com | Completed Operation: /api/v1/category/all | Response Status: 200 | Timestamp: 2024-12-19T21:16:53.592329100
+User: moses@gmail.com | Operation: /api/v1/category/catergoryTree | Method: GET | Timestamp: 2024-12-19T21:29:00.330756
+User: moses@gmail.com | Completed Operation: /api/v1/category/catergoryTree | Response Status: 400 | Timestamp: 2024-12-19T21:29:00.363668200
+User: moses@gmail.com | Operation: /api/v1/category/catergoryTree | Method: GET | Timestamp: 2024-12-19T21:29:15.805456500
+User: moses@gmail.com | Completed Operation: /api/v1/category/catergoryTree | Response Status: 400 | Timestamp: 2024-12-19T21:29:15.815428900
+User: moses@gmail.com | Operation: /api/v1/category/catergoryTree | Method: GET | Timestamp: 2024-12-19T21:29:25.598024700
+User: moses@gmail.com | Completed Operation: /api/v1/category/catergoryTree | Response Status: 400 | Timestamp: 2024-12-19T21:29:25.605025800
+User: moses@gmail.com | Operation: /api/v1/category/all | Method: GET | Timestamp: 2024-12-19T21:29:37.940248300
+User: moses@gmail.com | Completed Operation: /api/v1/category/all | Response Status: 200 | Timestamp: 2024-12-19T21:29:38.006207200
+User: moses@gmail.com | Operation: /api/v1/category/2/subcategories | Method: GET | Timestamp: 2024-12-19T21:29:54.326736200
+User: moses@gmail.com | Completed Operation: /api/v1/category/2/subcategories | Response Status: 200 | Timestamp: 2024-12-19T21:29:54.345170
+User: moses@gmail.com | Operation: /api/v1/category/8/subcategories | Method: GET | Timestamp: 2024-12-19T21:30:16.371581300
+User: moses@gmail.com | Completed Operation: /api/v1/category/8/subcategories | Response Status: 200 | Timestamp: 2024-12-19T21:30:16.397542900

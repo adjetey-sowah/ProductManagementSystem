@@ -2460,3 +2460,220 @@ com.juls.lab.productmanagementsystem.exception.ResourceNotFoundException: Produc
 2024-12-19T17:10:52.047Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /v3/api-docs/swagger-config | Response Status: 200 | Timestamp: 2024-12-19T17:10:52.047156200
 2024-12-19T17:10:52.106Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /v3/api-docs | Method: GET | Timestamp: 2024-12-19T17:10:52.106148600
 2024-12-19T17:10:53.524Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /v3/api-docs | Response Status: 200 | Timestamp: 2024-12-19T17:10:53.524004600
+2024-12-19T20:52:43.129Z  INFO 25168 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : Starting ProductManagementSystemApplication using Java 21.0.5 with PID 25168 (C:\Users\JuliusAdjeteySowah\OneDrive - AmaliTech gGmbH\Documents\Labs\ProductManagementSystem\target\classes started by JuliusAdjeteySowah in C:\Users\JuliusAdjeteySowah\OneDrive - AmaliTech gGmbH\Documents\Labs\ProductManagementSystem)
+2024-12-19T20:52:43.133Z DEBUG 25168 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-19T20:52:43.134Z  INFO 25168 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : The following 1 profile is active: "dev"
+2024-12-19T20:52:50.225Z DEBUG 25168 --- [ProductManagementSystem] [main] c.j.l.p.s.jwt.JWTAuthenticationFilter    : Filter 'JWTAuthenticationFilter' configured for use
+2024-12-19T20:52:50.407Z  WARN 25168 --- [ProductManagementSystem] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2024-12-19T20:52:52.698Z  WARN 25168 --- [ProductManagementSystem] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-19T20:52:54.053Z  INFO 25168 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : Started ProductManagementSystemApplication in 11.86 seconds (process running for 13.622)
+2024-12-19T20:53:20.052Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/index.html | Method: GET | Timestamp: 2024-12-19T20:53:20.052838200
+2024-12-19T20:53:20.060Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/swagger-ui/index.html | Method: GET
+2024-12-19T20:53:20.081Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 19ms
+2024-12-19T20:53:20.083Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/index.html | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.082713600
+2024-12-19T20:53:20.121Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-ui.css | Method: GET | Timestamp: 2024-12-19T20:53:20.121398500
+2024-12-19T20:53:20.121Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-ui-standalone-preset.js | Method: GET | Timestamp: 2024-12-19T20:53:20.121398500
+2024-12-19T20:53:20.122Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-ui-bundle.js | Method: GET | Timestamp: 2024-12-19T20:53:20.122396500
+2024-12-19T20:53:20.122Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-initializer.js | Method: GET | Timestamp: 2024-12-19T20:53:20.122675900
+2024-12-19T20:53:20.124Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/index.css | Method: GET | Timestamp: 2024-12-19T20:53:20.124766
+2024-12-19T20:53:20.128Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/swagger-ui/swagger-ui.css | Method: GET
+2024-12-19T20:53:20.132Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/swagger-ui/swagger-ui-bundle.js | Method: GET
+2024-12-19T20:53:20.133Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 4ms
+2024-12-19T20:53:20.133Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-ui.css | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.133391400
+2024-12-19T20:53:20.137Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/swagger-ui/swagger-ui-standalone-preset.js | Method: GET
+2024-12-19T20:53:20.143Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/swagger-ui/swagger-initializer.js | Method: GET
+2024-12-19T20:53:20.148Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/swagger-ui/index.css | Method: GET
+2024-12-19T20:53:20.148Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 11ms
+2024-12-19T20:53:20.149Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-standalone-preset.js | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.149711700
+2024-12-19T20:53:20.151Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 18ms
+2024-12-19T20:53:20.152Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-bundle.js | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.152071800
+2024-12-19T20:53:20.153Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 4ms
+2024-12-19T20:53:20.153Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/index.css | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.153378200
+2024-12-19T20:53:20.164Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 21ms
+2024-12-19T20:53:20.164Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-initializer.js | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.164559300
+2024-12-19T20:53:20.282Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/favicon-16x16.png | Method: GET | Timestamp: 2024-12-19T20:53:20.282719400
+2024-12-19T20:53:20.287Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/swagger-ui/favicon-16x16.png | Method: GET
+2024-12-19T20:53:20.291Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 3ms
+2024-12-19T20:53:20.292Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/favicon-16x16.png | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.292765300
+2024-12-19T20:53:20.316Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /v3/api-docs/swagger-config | Method: GET | Timestamp: 2024-12-19T20:53:20.316779700
+2024-12-19T20:53:20.321Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/v3/api-docs/swagger-config | Method: GET
+2024-12-19T20:53:20.352Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 31ms
+2024-12-19T20:53:20.353Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /v3/api-docs/swagger-config | Response Status: 200 | Timestamp: 2024-12-19T20:53:20.353056900
+2024-12-19T20:53:20.380Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /v3/api-docs | Method: GET | Timestamp: 2024-12-19T20:53:20.380172400
+2024-12-19T20:53:20.385Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/v3/api-docs | Method: GET
+2024-12-19T20:53:21.290Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 905ms
+2024-12-19T20:53:21.291Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /v3/api-docs | Response Status: 200 | Timestamp: 2024-12-19T20:53:21.291283300
+2024-12-19T20:54:12.763Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-10] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/index.html | Method: GET | Timestamp: 2024-12-19T20:54:12.763634900
+2024-12-19T20:54:12.770Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-10] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/swagger-ui/index.html | Method: GET
+2024-12-19T20:54:12.772Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-10] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 1ms
+2024-12-19T20:54:12.772Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-10] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/index.html | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.772468
+2024-12-19T20:54:12.789Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-ui.css | Method: GET | Timestamp: 2024-12-19T20:54:12.789708500
+2024-12-19T20:54:12.793Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-ui-standalone-preset.js | Method: GET | Timestamp: 2024-12-19T20:54:12.793695900
+2024-12-19T20:54:12.793Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-initializer.js | Method: GET | Timestamp: 2024-12-19T20:54:12.793695900
+2024-12-19T20:54:12.793Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-ui-bundle.js | Method: GET | Timestamp: 2024-12-19T20:54:12.793695900
+2024-12-19T20:54:12.794Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/index.css | Method: GET | Timestamp: 2024-12-19T20:54:12.794694600
+2024-12-19T20:54:12.794Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/swagger-ui/swagger-ui.css | Method: GET
+2024-12-19T20:54:12.798Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 3ms
+2024-12-19T20:54:12.798Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-ui.css | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.798699600
+2024-12-19T20:54:12.799Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/swagger-ui/swagger-ui-standalone-preset.js | Method: GET
+2024-12-19T20:54:12.803Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/swagger-ui/swagger-initializer.js | Method: GET
+2024-12-19T20:54:12.804Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 5ms
+2024-12-19T20:54:12.805Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-standalone-preset.js | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.805681600
+2024-12-19T20:54:12.806Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 3ms
+2024-12-19T20:54:12.807Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-initializer.js | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.807453900
+2024-12-19T20:54:12.812Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/swagger-ui/swagger-ui-bundle.js | Method: GET
+2024-12-19T20:54:12.825Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 13ms
+2024-12-19T20:54:12.825Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-bundle.js | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.825419100
+2024-12-19T20:54:12.827Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/swagger-ui/index.css | Method: GET
+2024-12-19T20:54:12.831Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 3ms
+2024-12-19T20:54:12.831Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/index.css | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.831395900
+2024-12-19T20:54:12.958Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /v3/api-docs/swagger-config | Method: GET | Timestamp: 2024-12-19T20:54:12.958443300
+2024-12-19T20:54:12.961Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/v3/api-docs/swagger-config | Method: GET
+2024-12-19T20:54:12.962Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 1ms
+2024-12-19T20:54:12.962Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /v3/api-docs/swagger-config | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.962940500
+2024-12-19T20:54:12.986Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /v3/api-docs | Method: GET | Timestamp: 2024-12-19T20:54:12.986391
+2024-12-19T20:54:12.991Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/v3/api-docs | Method: GET
+2024-12-19T20:54:12.994Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 3ms
+2024-12-19T20:54:12.995Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /v3/api-docs | Response Status: 200 | Timestamp: 2024-12-19T20:54:12.995392
+2024-12-19T20:54:53.842Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /api/reviews/3 | Method: GET | Timestamp: 2024-12-19T20:54:53.842246700
+2024-12-19T20:54:53.846Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /api/reviews/3 | Response Status: 401 | Timestamp: 2024-12-19T20:54:53.845815700
+2024-12-19T20:55:07.971Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /api/reviews/2 | Method: GET | Timestamp: 2024-12-19T20:55:07.971403
+2024-12-19T20:55:07.976Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /api/reviews/2 | Response Status: 401 | Timestamp: 2024-12-19T20:55:07.976502200
+2024-12-19T20:55:25.641Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-10] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /api/analytics/2/view | Method: POST | Timestamp: 2024-12-19T20:55:25.641230900
+2024-12-19T20:55:25.644Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-10] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /api/analytics/2/view | Response Status: 401 | Timestamp: 2024-12-19T20:55:25.644574600
+2024-12-19T20:55:36.915Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /api/analytics/3/view | Method: POST | Timestamp: 2024-12-19T20:55:36.915635600
+2024-12-19T20:55:36.920Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /api/analytics/3/view | Response Status: 401 | Timestamp: 2024-12-19T20:55:36.920820500
+2024-12-19T20:56:33.638Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /api/auth/login | Method: POST | Timestamp: 2024-12-19T20:56:33.638180600
+2024-12-19T20:56:33.644Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/api/auth/login | Method: POST
+2024-12-19T20:56:33.677Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.s.i.AuthenticationServiceImpl    : User Role = ADMIN
+2024-12-19T20:56:33.678Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.s.i.AuthenticationServiceImpl    : Authenticating user: grace@gmail.com
+2024-12-19T20:56:33.884Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 238ms
+2024-12-19T20:56:33.884Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /api/auth/login | Response Status: 200 | Timestamp: 2024-12-19T20:56:33.884808100
+2024-12-19T20:58:50.589Z  WARN 25168 --- [ProductManagementSystem] [http-nio-8090-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-12-19T20:59:05.580Z  WARN 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-12-19T20:59:14.575Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.i.OperationsInterceptor          : User: grace@gmail.com | Operation: /api/analytics/3/view | Method: POST | Timestamp: 2024-12-19T20:59:14.575892500
+2024-12-19T20:59:14.581Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/api/analytics/3/view | Method: POST
+2024-12-19T20:59:14.944Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 363ms
+2024-12-19T20:59:14.946Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.i.OperationsInterceptor          : User: grace@gmail.com | Completed Operation: /api/analytics/3/view | Response Status: 200 | Timestamp: 2024-12-19T20:59:14.946813600
+2024-12-19T21:04:32.558Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /api/auth/login | Method: POST | Timestamp: 2024-12-19T21:04:32.558656700
+2024-12-19T21:04:32.562Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/api/auth/login | Method: POST
+2024-12-19T21:04:32.566Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.s.i.AuthenticationServiceImpl    : User Role = ADMIN
+2024-12-19T21:04:32.567Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.s.i.AuthenticationServiceImpl    : Authenticating user: hilda@gmail.com
+2024-12-19T21:04:32.650Z ERROR 25168 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.s.i.AuthenticationServiceImpl    : Password mismatch for user: hilda@gmail.com
+2024-12-19T21:04:32.651Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /api/auth/login | Response Status: 200 | Timestamp: 2024-12-19T21:04:32.651602500
+2024-12-19T21:08:08.482Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /api/auth/login | Method: POST | Timestamp: 2024-12-19T21:08:08.482733800
+2024-12-19T21:08:08.486Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/api/auth/login | Method: POST
+2024-12-19T21:08:08.491Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.s.i.AuthenticationServiceImpl    : User Role = ADMIN
+2024-12-19T21:08:08.491Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.s.i.AuthenticationServiceImpl    : Authenticating user: moses@gmail.com
+2024-12-19T21:08:08.582Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 96ms
+2024-12-19T21:08:08.582Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /api/auth/login | Response Status: 200 | Timestamp: 2024-12-19T21:08:08.582817900
+2024-12-19T21:09:21.799Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: moses@gmail.com | Operation: /api/analytics/3/view | Method: POST | Timestamp: 2024-12-19T21:09:21.799631
+2024-12-19T21:09:21.805Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/api/analytics/3/view | Method: POST
+2024-12-19T21:09:22.076Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 271ms
+2024-12-19T21:09:22.078Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: moses@gmail.com | Completed Operation: /api/analytics/3/view | Response Status: 200 | Timestamp: 2024-12-19T21:09:22.078585500
+2024-12-19T21:09:45.931Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /api/analytics/3/view | Method: POST | Timestamp: 2024-12-19T21:09:45.931462900
+2024-12-19T21:09:45.935Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /api/analytics/3/view | Response Status: 401 | Timestamp: 2024-12-19T21:09:45.935053900
+2024-12-19T21:11:19.643Z ERROR 25168 --- [ProductManagementSystem] [http-nio-8090-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:399) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.juls.lab.productmanagementsystem.security.jwt.JWTService.extractAllClaims(JWTService.java:93) ~[classes/:na]
+	at com.juls.lab.productmanagementsystem.security.jwt.JWTService.extractClaim(JWTService.java:85) ~[classes/:na]
+	at com.juls.lab.productmanagementsystem.security.jwt.JWTService.extractUsername(JWTService.java:73) ~[classes/:na]
+	at com.juls.lab.productmanagementsystem.security.jwt.JWTAuthenticationFilter.doFilterInternal(JWTAuthenticationFilter.java:39) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-12-19T21:12:16.149Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: moses@gmail.com | Operation: /api/analytics/3/purchase | Method: POST | Timestamp: 2024-12-19T21:12:16.149942700
+2024-12-19T21:12:16.155Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/api/analytics/3/purchase | Method: POST
+2024-12-19T21:12:16.425Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 270ms
+2024-12-19T21:12:16.427Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: moses@gmail.com | Completed Operation: /api/analytics/3/purchase | Response Status: 200 | Timestamp: 2024-12-19T21:12:16.426488400
+2024-12-19T21:16:23.716Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.i.OperationsInterceptor          : User: moses@gmail.com | Operation: /api/v1/categories/all | Method: POST | Timestamp: 2024-12-19T21:16:23.716382
+2024-12-19T21:16:23.721Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/api/v1/categories/all | Method: POST
+2024-12-19T21:16:23.725Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.i.OperationsInterceptor          : User: moses@gmail.com | Completed Operation: /api/v1/categories/all | Response Status: 404 | Timestamp: 2024-12-19T21:16:23.725392500
+2024-12-19T21:16:29.984Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.i.OperationsInterceptor          : User: moses@gmail.com | Operation: /api/v1/categories/all | Method: GET | Timestamp: 2024-12-19T21:16:29.984905100
+2024-12-19T21:16:29.991Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/api/v1/categories/all | Method: GET
+2024-12-19T21:16:29.996Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.i.OperationsInterceptor          : User: moses@gmail.com | Completed Operation: /api/v1/categories/all | Response Status: 404 | Timestamp: 2024-12-19T21:16:29.996044300
+2024-12-19T21:16:53.551Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: moses@gmail.com | Operation: /api/v1/category/all | Method: GET | Timestamp: 2024-12-19T21:16:53.551320500
+2024-12-19T21:16:53.558Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.interceptors.LoggingInterceptor  : Request URL: http://localhost:8090/api/v1/category/all | Method: GET
+2024-12-19T21:16:53.584Z  WARN 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-12-19T21:16:53.590Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.interceptors.LoggingInterceptor  : Response Status: 200 | Time Taken: 32ms
+2024-12-19T21:16:53.592Z  INFO 25168 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: moses@gmail.com | Completed Operation: /api/v1/category/all | Response Status: 200 | Timestamp: 2024-12-19T21:16:53.592329100

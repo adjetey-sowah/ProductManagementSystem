@@ -54,6 +54,8 @@ public class CategoryServiceImpl implements CategoryService {
         binaryTree.insertCategory(category);
         return this.categoryRepository.save(category);
     }
+
+
     @Override
         public void deleteCategory(Long categoryId, Long reassignToCategoryId) {
             Category categoryToDelete = getCategoryById(categoryId);
@@ -171,6 +173,7 @@ public class CategoryServiceImpl implements CategoryService {
 
         if (!categories.isEmpty()) {
             categories.forEach(binaryTree::insertCategory);
+            System.out.println(categories.size()+" categories inserted into binary tree");
         } else {
             // Optionally, you can log or handle the case where categories are empty or null
             System.out.println("No categories found to insert into the binary tree.");
