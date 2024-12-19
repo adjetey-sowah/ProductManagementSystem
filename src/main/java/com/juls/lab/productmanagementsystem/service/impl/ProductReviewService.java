@@ -14,8 +14,8 @@ public class ProductReviewService {
 
     private final ProductReviewRepository reviewRepository;
 
-    public void addReview(ProductReview review){
-        reviewRepository.save(review);
+    public ProductReview addReview(ProductReview review){
+        return reviewRepository.save(review);
     }
 
     public List<ProductReview> getReviewsByProductId(String productId) {

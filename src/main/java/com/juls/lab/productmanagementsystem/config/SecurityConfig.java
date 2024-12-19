@@ -35,6 +35,9 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/api/auth/**").permitAll()
+                        .requestMatchers("/api/analytics/**").permitAll()
+                        .requestMatchers("/api/reviews/**").permitAll()
+                        .requestMatchers("/api/analytics/").permitAll()
                         .requestMatchers("/swagger-ui/**").permitAll()  // Allow everything under swagger-ui
                         .requestMatchers("/api/v1/**").hasAnyRole("ADMIN","STORE_MANAGER")  // API endpoints
                         .requestMatchers("/api/users").hasRole("ADMIN")

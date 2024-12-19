@@ -27,7 +27,7 @@ public class ProductAnalyticsService {
             }
         }
         analytics.setLastUpdated(LocalDateTime.now());
-        analyticsRepository.save(analytics);
+       analyticsRepository.save(analytics);
     }
 
 
