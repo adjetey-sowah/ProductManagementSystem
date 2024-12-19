@@ -11,10 +11,12 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.Min;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -32,13 +34,19 @@ public class ProductController {
     private final CategoryService categoryService;
 
 
+
     @GetMapping("/all")
     @Operation(summary = "Get all products with pagination")
-    public ResponseEntity<Page<Product>> getAllProducts(@RequestParam(defaultValue = "0")int page,
-                                                        @RequestParam(defaultValue = "10")int size){
-        Pageable pageable = PageRequest.of(page,size);
+    public ResponseEntity<Page<Product>> getAllProducts(@RequestParam(defaultValue = "0") @Min(0) int page,
+                                                        @RequestParam(defaultValue = "10")@Min(1) int size,
+                                                        @RequestParam(defaultValue = "id") String sortBy,
+                                                        @RequestParam(defaultValue = "asc") String sortOrder){
+
+        Sort.Direction direction = sortOrder.equalsIgnoreCase("desc") ? Sort.Direction.DESC : Sort.Direction.ASC;
+        Pageable pageable = PageRequest.of(page, size, Sort.by(direction, sortBy));
         Page<Product> products = this.productService.getAllProducts(pageable);
-        return ResponseEntity.ok(products);
+
+        return products.hasContent() ? ResponseEntity.ok(products) : ResponseEntity.noContent().build();
     }
 
 
