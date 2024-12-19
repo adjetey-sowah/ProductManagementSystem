@@ -56,3 +56,39 @@ User: grace@gmail.com | Operation: /api/v1/products/2 | Method: GET | Timestamp:
 User: grace@gmail.com | Completed Operation: /api/v1/products/2 | Response Status: 200 | Timestamp: 2024-12-19T16:03:52.093995200
 User: grace@gmail.com | Operation: /api/v1/products/4 | Method: GET | Timestamp: 2024-12-19T16:04:20.483909700
 User: grace@gmail.com | Completed Operation: /api/v1/products/4 | Response Status: 200 | Timestamp: 2024-12-19T16:04:20.498867900
+User: Anonymous | Operation: /swagger-ui/index.html | Method: GET | Timestamp: 2024-12-19T16:54:59.554986800
+User: Anonymous | Completed Operation: /swagger-ui/index.html | Response Status: 200 | Timestamp: 2024-12-19T16:54:59.606195500
+User: Anonymous | Operation: /swagger-ui/swagger-ui.css | Method: GET | Timestamp: 2024-12-19T16:54:59.677006300
+User: Anonymous | Operation: /swagger-ui/index.css | Method: GET | Timestamp: 2024-12-19T16:54:59.680919300
+User: Anonymous | Operation: /swagger-ui/swagger-initializer.js | Method: GET | Timestamp: 2024-12-19T16:54:59.681992300
+User: Anonymous | Operation: /swagger-ui/swagger-ui-standalone-preset.js | Method: GET | Timestamp: 2024-12-19T16:54:59.681992300
+User: Anonymous | Operation: /swagger-ui/swagger-ui-bundle.js | Method: GET | Timestamp: 2024-12-19T16:54:59.683004400
+User: Anonymous | Completed Operation: /swagger-ui/swagger-ui.css | Response Status: 200 | Timestamp: 2024-12-19T16:54:59.693960900
+User: Anonymous | Completed Operation: /swagger-ui/index.css | Response Status: 200 | Timestamp: 2024-12-19T16:54:59.695956
+User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-standalone-preset.js | Response Status: 200 | Timestamp: 2024-12-19T16:54:59.711912800
+User: Anonymous | Completed Operation: /swagger-ui/swagger-initializer.js | Response Status: 200 | Timestamp: 2024-12-19T16:54:59.726900600
+User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-bundle.js | Response Status: 200 | Timestamp: 2024-12-19T16:54:59.735875900
+User: Anonymous | Operation: /swagger-ui/favicon-16x16.png | Method: GET | Timestamp: 2024-12-19T16:55:00.019012800
+User: Anonymous | Completed Operation: /swagger-ui/favicon-16x16.png | Response Status: 200 | Timestamp: 2024-12-19T16:55:00.041903900
+User: Anonymous | Operation: /v3/api-docs/swagger-config | Method: GET | Timestamp: 2024-12-19T16:55:00.114897900
+User: Anonymous | Completed Operation: /v3/api-docs/swagger-config | Response Status: 200 | Timestamp: 2024-12-19T16:55:00.258815700
+User: Anonymous | Operation: /v3/api-docs | Method: GET | Timestamp: 2024-12-19T16:55:00.399758200
+User: Anonymous | Completed Operation: /v3/api-docs | Response Status: 200 | Timestamp: 2024-12-19T16:55:01.885338900
+User: Anonymous | Operation: /swagger-ui/index.html | Method: GET | Timestamp: 2024-12-19T17:10:51.386614300
+User: Anonymous | Completed Operation: /swagger-ui/index.html | Response Status: 200 | Timestamp: 2024-12-19T17:10:51.442169700
+User: Anonymous | Operation: /swagger-ui/swagger-ui.css | Method: GET | Timestamp: 2024-12-19T17:10:51.534203500
+User: Anonymous | Operation: /swagger-ui/swagger-ui-standalone-preset.js | Method: GET | Timestamp: 2024-12-19T17:10:51.538711400
+User: Anonymous | Operation: /swagger-ui/index.css | Method: GET | Timestamp: 2024-12-19T17:10:51.538711400
+User: Anonymous | Operation: /swagger-ui/swagger-initializer.js | Method: GET | Timestamp: 2024-12-19T17:10:51.539708900
+User: Anonymous | Operation: /swagger-ui/swagger-ui-bundle.js | Method: GET | Timestamp: 2024-12-19T17:10:51.539708900
+User: Anonymous | Completed Operation: /swagger-ui/swagger-ui.css | Response Status: 200 | Timestamp: 2024-12-19T17:10:51.549406200
+User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-standalone-preset.js | Response Status: 200 | Timestamp: 2024-12-19T17:10:51.560230400
+User: Anonymous | Completed Operation: /swagger-ui/index.css | Response Status: 200 | Timestamp: 2024-12-19T17:10:51.575150900
+User: Anonymous | Completed Operation: /swagger-ui/swagger-initializer.js | Response Status: 200 | Timestamp: 2024-12-19T17:10:51.630105600
+User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-bundle.js | Response Status: 200 | Timestamp: 2024-12-19T17:10:51.642970
+User: Anonymous | Operation: /swagger-ui/favicon-16x16.png | Method: GET | Timestamp: 2024-12-19T17:10:51.944143900
+User: Anonymous | Completed Operation: /swagger-ui/favicon-16x16.png | Response Status: 200 | Timestamp: 2024-12-19T17:10:51.957109
+User: Anonymous | Operation: /v3/api-docs/swagger-config | Method: GET | Timestamp: 2024-12-19T17:10:51.999032
+User: Anonymous | Completed Operation: /v3/api-docs/swagger-config | Response Status: 200 | Timestamp: 2024-12-19T17:10:52.048153500
+User: Anonymous | Operation: /v3/api-docs | Method: GET | Timestamp: 2024-12-19T17:10:52.107146100
+User: Anonymous | Completed Operation: /v3/api-docs | Response Status: 200 | Timestamp: 2024-12-19T17:10:53.524004600

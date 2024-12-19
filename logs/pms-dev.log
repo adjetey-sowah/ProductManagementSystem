@@ -2050,3 +2050,413 @@ java.lang.RuntimeException: Exception authenticating MongoCredential{mechanism=S
 2024-12-19T15:51:47.679Z  INFO 8964 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/favicon-16x16.png | Response Status: 200 | Timestamp: 2024-12-19T15:51:47.679507600
 2024-12-19T15:51:47.716Z  INFO 8964 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /v3/api-docs/swagger-config | Method: GET | Timestamp: 2024-12-19T15:51:47.716733400
 2024-12-19T15:51:47.725Z  INFO 8964 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /v3/api-docs/swagger-config | Response Status: 401 | Timestamp: 2024-12-19T15:51:47.725691200
+2024-12-19T15:53:08.198Z  INFO 9456 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : Starting ProductManagementSystemApplication using Java 21.0.5 with PID 9456 (C:\Users\JuliusAdjeteySowah\OneDrive - AmaliTech gGmbH\Documents\Labs\ProductManagementSystem\target\classes started by JuliusAdjeteySowah in C:\Users\JuliusAdjeteySowah\OneDrive - AmaliTech gGmbH\Documents\Labs\ProductManagementSystem)
+2024-12-19T15:53:08.202Z DEBUG 9456 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-19T15:53:08.204Z  INFO 9456 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : The following 1 profile is active: "dev"
+2024-12-19T15:53:20.324Z DEBUG 9456 --- [ProductManagementSystem] [main] c.j.l.p.s.jwt.JWTAuthenticationFilter    : Filter 'JWTAuthenticationFilter' configured for use
+2024-12-19T15:53:20.505Z  WARN 9456 --- [ProductManagementSystem] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2024-12-19T15:53:24.678Z  WARN 9456 --- [ProductManagementSystem] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-19T15:53:26.936Z  INFO 9456 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : Started ProductManagementSystemApplication in 19.741 seconds (process running for 21.115)
+2024-12-19T15:55:43.332Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/index.html | Method: GET | Timestamp: 2024-12-19T15:55:43.331093400
+2024-12-19T15:55:43.374Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/index.html | Response Status: 200 | Timestamp: 2024-12-19T15:55:43.371164700
+2024-12-19T15:55:43.442Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-ui.css | Method: GET | Timestamp: 2024-12-19T15:55:43.442744700
+2024-12-19T15:55:43.446Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/index.css | Method: GET | Timestamp: 2024-12-19T15:55:43.446316300
+2024-12-19T15:55:43.447Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-ui-standalone-preset.js | Method: GET | Timestamp: 2024-12-19T15:55:43.447243900
+2024-12-19T15:55:43.450Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-initializer.js | Method: GET | Timestamp: 2024-12-19T15:55:43.450236800
+2024-12-19T15:55:43.451Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-ui-bundle.js | Method: GET | Timestamp: 2024-12-19T15:55:43.451233100
+2024-12-19T15:55:43.461Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-ui.css | Response Status: 200 | Timestamp: 2024-12-19T15:55:43.461794
+2024-12-19T15:55:43.462Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/index.css | Response Status: 200 | Timestamp: 2024-12-19T15:55:43.462305400
+2024-12-19T15:55:43.472Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-standalone-preset.js | Response Status: 200 | Timestamp: 2024-12-19T15:55:43.472278800
+2024-12-19T15:55:43.496Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-bundle.js | Response Status: 200 | Timestamp: 2024-12-19T15:55:43.495964500
+2024-12-19T15:55:43.500Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-initializer.js | Response Status: 200 | Timestamp: 2024-12-19T15:55:43.500951200
+2024-12-19T15:55:43.772Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/favicon-16x16.png | Method: GET | Timestamp: 2024-12-19T15:55:43.772427200
+2024-12-19T15:55:43.782Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/favicon-16x16.png | Response Status: 200 | Timestamp: 2024-12-19T15:55:43.782430900
+2024-12-19T15:55:43.820Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /v3/api-docs/swagger-config | Method: GET | Timestamp: 2024-12-19T15:55:43.820387700
+2024-12-19T15:55:43.861Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /v3/api-docs/swagger-config | Response Status: 200 | Timestamp: 2024-12-19T15:55:43.861987200
+2024-12-19T15:55:43.914Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /v3/api-docs | Method: GET | Timestamp: 2024-12-19T15:55:43.914666400
+2024-12-19T15:55:44.934Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /v3/api-docs | Response Status: 200 | Timestamp: 2024-12-19T15:55:44.934858400
+2024-12-19T15:58:08.592Z  WARN 9456 --- [ProductManagementSystem] [http-nio-8090-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-12-19T15:58:19.364Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /api/auth/login | Method: POST | Timestamp: 2024-12-19T15:58:19.364541600
+2024-12-19T15:58:19.404Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.s.i.AuthenticationServiceImpl    : User Role = ADMIN
+2024-12-19T15:58:19.407Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.s.i.AuthenticationServiceImpl    : Authenticating user: grace@gmail.com
+2024-12-19T15:58:19.653Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /api/auth/login | Response Status: 200 | Timestamp: 2024-12-19T15:58:19.653166100
+2024-12-19T15:59:14.230Z ERROR 9456 --- [ProductManagementSystem] [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:399) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.juls.lab.productmanagementsystem.security.jwt.JWTService.extractAllClaims(JWTService.java:93) ~[classes/:na]
+	at com.juls.lab.productmanagementsystem.security.jwt.JWTService.extractClaim(JWTService.java:85) ~[classes/:na]
+	at com.juls.lab.productmanagementsystem.security.jwt.JWTService.extractUsername(JWTService.java:73) ~[classes/:na]
+	at com.juls.lab.productmanagementsystem.security.jwt.JWTAuthenticationFilter.doFilterInternal(JWTAuthenticationFilter.java:39) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-12-19T16:00:09.068Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /api/auth | Method: POST | Timestamp: 2024-12-19T16:00:09.068077500
+2024-12-19T16:00:09.077Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /api/auth | Response Status: 404 | Timestamp: 2024-12-19T16:00:09.077054
+2024-12-19T16:00:48.002Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /api/auth | Method: POST | Timestamp: 2024-12-19T16:00:48.002582800
+2024-12-19T16:00:48.011Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /api/auth | Response Status: 404 | Timestamp: 2024-12-19T16:00:48.011559100
+2024-12-19T16:01:02.203Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /api/auth/login | Method: POST | Timestamp: 2024-12-19T16:01:02.203118900
+2024-12-19T16:01:02.217Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.s.i.AuthenticationServiceImpl    : User Role = ADMIN
+2024-12-19T16:01:02.217Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.s.i.AuthenticationServiceImpl    : Authenticating user: grace@gmail.com
+2024-12-19T16:01:02.419Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /api/auth/login | Response Status: 200 | Timestamp: 2024-12-19T16:01:02.419707600
+2024-12-19T16:01:24.818Z ERROR 9456 --- [ProductManagementSystem] [http-nio-8090-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.security.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:399) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
+	at com.juls.lab.productmanagementsystem.security.jwt.JWTService.extractAllClaims(JWTService.java:93) ~[classes/:na]
+	at com.juls.lab.productmanagementsystem.security.jwt.JWTService.extractClaim(JWTService.java:85) ~[classes/:na]
+	at com.juls.lab.productmanagementsystem.security.jwt.JWTService.extractUsername(JWTService.java:73) ~[classes/:na]
+	at com.juls.lab.productmanagementsystem.security.jwt.JWTAuthenticationFilter.doFilterInternal(JWTAuthenticationFilter.java:39) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-12-19T16:01:52.007Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.i.OperationsInterceptor          : User: grace@gmail.com | Operation: /api/users | Method: GET | Timestamp: 2024-12-19T16:01:52.007374700
+2024-12-19T16:01:52.051Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.i.OperationsInterceptor          : User: grace@gmail.com | Completed Operation: /api/users | Response Status: 200 | Timestamp: 2024-12-19T16:01:52.051137300
+2024-12-19T16:03:04.005Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: grace@gmail.com | Operation: /api/v1/products/all | Method: GET | Timestamp: 2024-12-19T16:03:04.005371800
+2024-12-19T16:03:04.053Z  WARN 9456 --- [ProductManagementSystem] [http-nio-8090-exec-1] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2024-12-19T16:03:04.088Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: grace@gmail.com | Completed Operation: /api/v1/products/all | Response Status: 200 | Timestamp: 2024-12-19T16:03:04.088149100
+2024-12-19T16:03:52.060Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.i.OperationsInterceptor          : User: grace@gmail.com | Operation: /api/v1/products/2 | Method: GET | Timestamp: 2024-12-19T16:03:52.060056600
+2024-12-19T16:03:52.093Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.i.OperationsInterceptor          : User: grace@gmail.com | Completed Operation: /api/v1/products/2 | Response Status: 200 | Timestamp: 2024-12-19T16:03:52.093032300
+2024-12-19T16:04:20.483Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-10] c.j.l.p.i.OperationsInterceptor          : User: grace@gmail.com | Operation: /api/v1/products/4 | Method: GET | Timestamp: 2024-12-19T16:04:20.483909700
+2024-12-19T16:04:20.498Z  INFO 9456 --- [ProductManagementSystem] [http-nio-8090-exec-10] c.j.l.p.i.OperationsInterceptor          : User: grace@gmail.com | Completed Operation: /api/v1/products/4 | Response Status: 200 | Timestamp: 2024-12-19T16:04:20.498867900
+2024-12-19T16:04:20.505Z ERROR 9456 --- [ProductManagementSystem] [http-nio-8090-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: com.juls.lab.productmanagementsystem.exception.ResourceNotFoundException: Product not found with id 4] with root cause
+
+com.juls.lab.productmanagementsystem.exception.ResourceNotFoundException: Product not found with id 4
+	at com.juls.lab.productmanagementsystem.service.impl.ProductServiceImpl.lambda$getProductById$0(ProductServiceImpl.java:68) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.juls.lab.productmanagementsystem.service.impl.ProductServiceImpl.getProductById(ProductServiceImpl.java:68) ~[classes/:na]
+	at com.juls.lab.productmanagementsystem.controller.ProductController.getProductById(ProductController.java:116) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.33.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at com.juls.lab.productmanagementsystem.security.jwt.JWTAuthenticationFilter.doFilterInternal(JWTAuthenticationFilter.java:54) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) ~[spring-webmvc-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) ~[spring-security-config-6.4.1.jar:6.4.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.0.jar:6.2.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-12-19T16:54:25.967Z  INFO 32328 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : Starting ProductManagementSystemApplication using Java 21.0.5 with PID 32328 (C:\Users\JuliusAdjeteySowah\OneDrive - AmaliTech gGmbH\Documents\Labs\ProductManagementSystem\target\classes started by JuliusAdjeteySowah in C:\Users\JuliusAdjeteySowah\OneDrive - AmaliTech gGmbH\Documents\Labs\ProductManagementSystem)
+2024-12-19T16:54:25.971Z DEBUG 32328 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-19T16:54:25.973Z  INFO 32328 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : The following 1 profile is active: "dev"
+2024-12-19T16:54:41.282Z DEBUG 32328 --- [ProductManagementSystem] [main] c.j.l.p.s.jwt.JWTAuthenticationFilter    : Filter 'JWTAuthenticationFilter' configured for use
+2024-12-19T16:54:41.504Z  WARN 32328 --- [ProductManagementSystem] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2024-12-19T16:54:46.002Z  WARN 32328 --- [ProductManagementSystem] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-19T16:54:48.606Z  INFO 32328 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : Started ProductManagementSystemApplication in 23.558 seconds (process running for 24.974)
+2024-12-19T16:54:59.553Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/index.html | Method: GET | Timestamp: 2024-12-19T16:54:59.553989100
+2024-12-19T16:54:59.605Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/index.html | Response Status: 200 | Timestamp: 2024-12-19T16:54:59.602207900
+2024-12-19T16:54:59.677Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-ui.css | Method: GET | Timestamp: 2024-12-19T16:54:59.677006300
+2024-12-19T16:54:59.679Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/index.css | Method: GET | Timestamp: 2024-12-19T16:54:59.679998700
+2024-12-19T16:54:59.681Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-ui-standalone-preset.js | Method: GET | Timestamp: 2024-12-19T16:54:59.681992300
+2024-12-19T16:54:59.681Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-10] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-initializer.js | Method: GET | Timestamp: 2024-12-19T16:54:59.681992300
+2024-12-19T16:54:59.681Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-ui-bundle.js | Method: GET | Timestamp: 2024-12-19T16:54:59.681992300
+2024-12-19T16:54:59.693Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-ui.css | Response Status: 200 | Timestamp: 2024-12-19T16:54:59.693960900
+2024-12-19T16:54:59.694Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/index.css | Response Status: 200 | Timestamp: 2024-12-19T16:54:59.694958600
+2024-12-19T16:54:59.710Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-standalone-preset.js | Response Status: 200 | Timestamp: 2024-12-19T16:54:59.710915200
+2024-12-19T16:54:59.725Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-10] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-initializer.js | Response Status: 200 | Timestamp: 2024-12-19T16:54:59.725903
+2024-12-19T16:54:59.735Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-bundle.js | Response Status: 200 | Timestamp: 2024-12-19T16:54:59.735875900
+2024-12-19T16:55:00.017Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/favicon-16x16.png | Method: GET | Timestamp: 2024-12-19T16:55:00.017914400
+2024-12-19T16:55:00.040Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/favicon-16x16.png | Response Status: 200 | Timestamp: 2024-12-19T16:55:00.040905700
+2024-12-19T16:55:00.114Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /v3/api-docs/swagger-config | Method: GET | Timestamp: 2024-12-19T16:55:00.114897900
+2024-12-19T16:55:00.258Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /v3/api-docs/swagger-config | Response Status: 200 | Timestamp: 2024-12-19T16:55:00.258815700
+2024-12-19T16:55:00.398Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /v3/api-docs | Method: GET | Timestamp: 2024-12-19T16:55:00.398450900
+2024-12-19T16:55:01.884Z  INFO 32328 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /v3/api-docs | Response Status: 200 | Timestamp: 2024-12-19T16:55:01.884341
+2024-12-19T17:10:32.024Z  INFO 31536 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : Starting ProductManagementSystemApplication using Java 21.0.5 with PID 31536 (C:\Users\JuliusAdjeteySowah\OneDrive - AmaliTech gGmbH\Documents\Labs\ProductManagementSystem\target\classes started by JuliusAdjeteySowah in C:\Users\JuliusAdjeteySowah\OneDrive - AmaliTech gGmbH\Documents\Labs\ProductManagementSystem)
+2024-12-19T17:10:32.039Z DEBUG 31536 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-19T17:10:32.040Z  INFO 31536 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : The following 1 profile is active: "dev"
+2024-12-19T17:10:41.703Z DEBUG 31536 --- [ProductManagementSystem] [main] c.j.l.p.s.jwt.JWTAuthenticationFilter    : Filter 'JWTAuthenticationFilter' configured for use
+2024-12-19T17:10:41.861Z  WARN 31536 --- [ProductManagementSystem] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2024-12-19T17:10:45.015Z  WARN 31536 --- [ProductManagementSystem] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-19T17:10:46.883Z  INFO 31536 --- [ProductManagementSystem] [main] j.l.p.ProductManagementSystemApplication : Started ProductManagementSystemApplication in 16.322 seconds (process running for 18.164)
+2024-12-19T17:10:51.386Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/index.html | Method: GET | Timestamp: 2024-12-19T17:10:51.386614300
+2024-12-19T17:10:51.441Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-1] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/index.html | Response Status: 200 | Timestamp: 2024-12-19T17:10:51.438235400
+2024-12-19T17:10:51.533Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-ui.css | Method: GET | Timestamp: 2024-12-19T17:10:51.533698400
+2024-12-19T17:10:51.538Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-ui-standalone-preset.js | Method: GET | Timestamp: 2024-12-19T17:10:51.538455100
+2024-12-19T17:10:51.538Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/index.css | Method: GET | Timestamp: 2024-12-19T17:10:51.538711400
+2024-12-19T17:10:51.538Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-initializer.js | Method: GET | Timestamp: 2024-12-19T17:10:51.538711400
+2024-12-19T17:10:51.539Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/swagger-ui-bundle.js | Method: GET | Timestamp: 2024-12-19T17:10:51.539708900
+2024-12-19T17:10:51.548Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-2] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-ui.css | Response Status: 200 | Timestamp: 2024-12-19T17:10:51.548223
+2024-12-19T17:10:51.559Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-5] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-standalone-preset.js | Response Status: 200 | Timestamp: 2024-12-19T17:10:51.559193300
+2024-12-19T17:10:51.575Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-3] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/index.css | Response Status: 200 | Timestamp: 2024-12-19T17:10:51.574154
+2024-12-19T17:10:51.630Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-6] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-initializer.js | Response Status: 200 | Timestamp: 2024-12-19T17:10:51.630031200
+2024-12-19T17:10:51.641Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-4] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/swagger-ui-bundle.js | Response Status: 200 | Timestamp: 2024-12-19T17:10:51.641972600
+2024-12-19T17:10:51.944Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /swagger-ui/favicon-16x16.png | Method: GET | Timestamp: 2024-12-19T17:10:51.944143900
+2024-12-19T17:10:51.957Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-7] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /swagger-ui/favicon-16x16.png | Response Status: 200 | Timestamp: 2024-12-19T17:10:51.957109
+2024-12-19T17:10:51.998Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /v3/api-docs/swagger-config | Method: GET | Timestamp: 2024-12-19T17:10:51.998035100
+2024-12-19T17:10:52.047Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-8] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /v3/api-docs/swagger-config | Response Status: 200 | Timestamp: 2024-12-19T17:10:52.047156200
+2024-12-19T17:10:52.106Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Operation: /v3/api-docs | Method: GET | Timestamp: 2024-12-19T17:10:52.106148600
+2024-12-19T17:10:53.524Z  INFO 31536 --- [ProductManagementSystem] [http-nio-8090-exec-9] c.j.l.p.i.OperationsInterceptor          : User: Anonymous | Completed Operation: /v3/api-docs | Response Status: 200 | Timestamp: 2024-12-19T17:10:53.524004600
