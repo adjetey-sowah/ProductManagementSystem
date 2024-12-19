@@ -1,15 +1,16 @@
 package com.juls.lab.productmanagementsystem.service.impl;
 
-import com.juls.lab.productmanagementsystem.data.model.Role;
 import com.juls.lab.productmanagementsystem.data.model.User;
-import com.juls.lab.productmanagementsystem.dto.RegistrationRequest;
+import com.juls.lab.productmanagementsystem.dto.UserResponse;
 import com.juls.lab.productmanagementsystem.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -23,29 +24,29 @@ public class UserServiceImpl {
                 .orElseThrow(() -> new UsernameNotFoundException("user not found with email: "+email));
     }
 
-        public User registerUser(RegistrationRequest registrationRequest){
-            var user = new User();
-            user.setUsername(registrationRequest.username());
-            user.setEmail(registrationRequest.email());
-            user.setPassword(passwordEncoder().encode(registrationRequest.password()));
-            user.setRole(Role.CUSTOMER);
-            user.setEnabled(true);
-            return this.userRepository.save(user);
-        }
-
-        public User registerAdminAndStoreManager(RegistrationRequest registrationRequest, Role role){
-            var user = new User();
-            user.setUsername(registrationRequest.username());
-            user.setEmail(registrationRequest.email());
-            user.setPassword(passwordEncoder().encode(registrationRequest.password()));
-            user.setRole(role);
-            user.setEnabled(true);
-            return this.userRepository.save(user);
-        }
+    @PreAuthorize("hasRole('ADMIN')")
+    public List<UserResponse> getAllUsers(){
+        return userRepository.findAll().stream()
+                .map(this::mapToUserResponse)
+                .collect(Collectors.toList());
+    }
 
 
-        public PasswordEncoder passwordEncoder(){
-            return new BCryptPasswordEncoder();
-        }
+    @PreAuthorize("hasRole('ADMIN') or #id == authentication.principal.id")
+    public UserResponse getUserById(Long id){
+        return userRepository.findById(id)
+                .map(this::mapToUserResponse)
+                .orElseThrow(() -> new RuntimeException("User not found"));
+    }
+
+    public UserResponse mapToUserResponse(User user) {
+        return UserResponse.builder()
+                .id(user.getUserId())
+                .email(user.getEmail())
+                .username(user.getUsername())
+                .role(user.getRole())
+                .build();
+    }
+
 
 }
